@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="google-play-badge.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 44"
+	 style="enable-background:new 0 0 40 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#path64_1_);}
+	.st1{fill:url(#path78_1_);}
+	.st2{fill:url(#path88_1_);}
+	.st3{fill:url(#path104_1_);}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview4" inkscape:current-layer="g10" inkscape:cx="93.965168" inkscape:cy="29.61582" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="7.6276974" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g id="g10" transform="matrix(1.25,0,0,-1.25,-9.4247625,49.85025)" inkscape:groupmode="layer" inkscape:label="google-play-badge">
+	<g id="g12" transform="matrix(1.0023923,0,0,0.99072975,-0.29664807,0)">
+		<g id="g48">
+			
+				<linearGradient id="path64_1_" gradientUnits="userSpaceOnUse" x1="31.6606" y1="157.0534" x2="2.6598" y2="128.0525" gradientTransform="matrix(1.0024 0 0 -0.9907 -7.5678 162.4655)">
+				<stop  offset="0" style="stop-color:#00A0FF"/>
+				<stop  offset="6.599999e-03" style="stop-color:#00A1FF"/>
+				<stop  offset="0.2601" style="stop-color:#00BEFF"/>
+				<stop  offset="0.5122" style="stop-color:#00D2FF"/>
+				<stop  offset="0.7604" style="stop-color:#00DFFF"/>
+				<stop  offset="1" style="stop-color:#00E3FF"/>
+			</linearGradient>
+			<path id="path64" inkscape:connector-curvature="0" class="st0" d="M8.5,39.7c-0.4-0.4-0.6-1.1-0.6-1.9V7.2
+				c0-0.9,0.2-1.5,0.6-1.9l0.1-0.1l17.1,17.1v0.4L8.6,39.8L8.5,39.7z"/>
+		</g>
+		<g id="g66">
+			
+				<linearGradient id="path78_1_" gradientUnits="userSpaceOnUse" x1="48.2595" y1="141.2979" x2="6.446" y2="141.2979" gradientTransform="matrix(1.0024 0 0 -0.9907 -7.5678 162.4655)">
+				<stop  offset="0" style="stop-color:#FFE000"/>
+				<stop  offset="0.4087" style="stop-color:#FFBD00"/>
+				<stop  offset="0.7754" style="stop-color:#FFA500"/>
+				<stop  offset="1" style="stop-color:#FF9C00"/>
+			</linearGradient>
+			<path id="path78" inkscape:connector-curvature="0" class="st1" d="M31.4,16.6l-5.7,5.7v0.4l5.7,5.7l0.1-0.1l6.8-3.8
+				c1.9-1.1,1.9-2.9,0-4l-6.8-3.8C31.5,16.6,31.4,16.6,31.4,16.6z"/>
+		</g>
+		<g id="g80">
+			
+				<linearGradient id="path88_1_" gradientUnits="userSpaceOnUse" x1="24.3288" y1="149.7377" x2="-14.9988" y2="110.4101" gradientTransform="matrix(1.0024 0 0 -0.9907 -7.5678 162.4655)">
+				<stop  offset="0" style="stop-color:#FF3A44"/>
+				<stop  offset="1" style="stop-color:#C31162"/>
+			</linearGradient>
+			<path id="path88" inkscape:connector-curvature="0" class="st2" d="M31.5,16.6l-5.8,5.8L8.5,5.2c0.6-0.7,1.7-0.8,2.9-0.1
+				L31.5,16.6"/>
+		</g>
+		<g id="g90">
+			
+				<linearGradient id="path104_1_" gradientUnits="userSpaceOnUse" x1="0.1558" y1="157.3188" x2="17.7173" y2="139.7574" gradientTransform="matrix(1.0024 0 0 -0.9907 -7.5678 162.4655)">
+				<stop  offset="0" style="stop-color:#32A071"/>
+				<stop  offset="6.850000e-02" style="stop-color:#2DA771"/>
+				<stop  offset="0.4762" style="stop-color:#15CF74"/>
+				<stop  offset="0.8009" style="stop-color:#06E775"/>
+				<stop  offset="1" style="stop-color:#00F076"/>
+			</linearGradient>
+			<path id="path104" inkscape:connector-curvature="0" class="st3" d="M31.5,28.3L11.3,39.8c-1.2,0.7-2.2,0.6-2.9-0.1l17.2-17.2
+				L31.5,28.3z"/>
+		</g>
+	</g>
+</g>
+</svg>
