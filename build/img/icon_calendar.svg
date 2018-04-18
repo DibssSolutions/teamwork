@@ -1,0 +1,12 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+    <style>
+        .st0{fill:none;stroke:#000;stroke-miterlimit:10}
+    </style>
+    <path class="st0" d="M0 12.5h40"/>
+    <path class="st0" d="M0 4.5h40"/>
+    <path class="st0" d="M31.5 0v8"/>
+    <path class="st0" d="M39.5 4v8"/>
+    <path class="st0" d="M.5 4v8"/>
+    <path class="st0" d="M8.5 0v8"/>
+    <path class="st0" d="M.5 16.5h39v23H.5z"/>
+</svg>

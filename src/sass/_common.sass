@@ -1,5 +1,82 @@
 body
-	background: #FFF
-	+css-lock(16, 50, 600, 1000)
-	line-height: 1.4
+	font-family: $SFUIDisplay
+	font-size: 14px
+	// line-height: 30px
+	// letter-spacing: 0.05em
+	font-weight: 200
+	+font-smoothing
 
+.title-lg
+	font-family: $Panton
+	font-size: 60px
+	line-height: 72px
+	letter-spacing: 0.25em
+	font-weight: 600 
+	
+.title-md
+	font-family: $Panton
+	font-size: 48px
+	line-height: 60px
+	letter-spacing: 0.25em
+	font-weight: 600 
+
+.title-sm
+	font-family: $Panton
+	font-size: 30px
+	line-height: 48px
+	letter-spacing: 0.25em
+	font-weight: 600
+
+.title-xs
+	font-family: $SFUIDisplay
+	font-size: 18px
+	// line-height: 30px
+	letter-spacing: 0.05em
+	font-weight: 200
+	color: $grey
+	&_small
+		font-size: 14px
+		font-weight: 600 
+
+.inner
+	max-width: 1045px
+	padding: 0 20px
+	margin: 0 auto
+
+.logo
+	width: 97px
+	display: block
+	img
+		max-width: 100%
+		display: block 
+
+.icon-soc
+	background: $green
+	height: 40px
+	width: 40px
+	display: block
+	border-radius: 50%
+	position: relative
+	.icon-icon_vk, .icon-icon_insta, .icon-icon_fb, 
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		fill: $white
+
+.icon-master, .icon-visa, .icon-PayPay
+	font-size: 33px
+
+.dev-logo
+	display: flex
+	span
+		margin-top: -5px 
+		color: #839298
+		font-size: 10px
+		margin-right: 5px
+	&__icon
+		max-width: 85px
+		display: block
+		img
+			display: block
+			width: 100%
