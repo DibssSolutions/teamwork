@@ -24,7 +24,7 @@
 				</div>		
 			</div>
 			<div class="footer__info">
-				<div class="footer__col">
+				<div class="footer__col footer__col_hide">
 					<div class="footer__subtitle">
 						<h4 class="title-xs title-xs_small">
 							Меню
@@ -37,7 +37,7 @@
 						<li>Контакты</li>
 					</ul>
 				</div>
-				<div class="footer__col">
+				<div class="footer__col footer__col_sm">
 					<div class="footer__subtitle">
 						<h4 class="title-xs title-xs_small">
 							Телефон
@@ -53,33 +53,37 @@
 						<p>+86 18500709387</p>
 					</div>
 				</div>
-				<div class="footer__col">
-					<div class="footer__subtitle">
-						<h4 class="title-xs title-xs_small">
-							Skype
-						</h4>
-					</div>
-					<p>Esl_Global</p>
-					<div class="footer__subtitle">
-						<h4 class="title-xs title-xs_small">
-							Почта
-						</h4>
-					</div>	
-					<p>info@eslglobal-edu.com</p>
+				<div class="footer__col footer__col_md">
 					<div class="footer__row">
+						<div class="footer__subtitle">
+							<h4 class="title-xs title-xs_small">
+								Skype
+							</h4>
+						</div>
+						<p>Esl_Global</p>
+					</div>
+					<div class="footer__row footer__row_xs">
+						<div class="footer__subtitle">
+							<h4 class="title-xs title-xs_small">
+								Почта
+							</h4>
+						</div>
+						<p>info@eslglobal-edu.com</p>
+					</div>					
+					<div class="footer__row footer__row_hide footer__row_xs">
 						<div class="footer__subtitle">
 							<h4 class="title-xs title-xs_small">
 								Принимаем платежи
 							</h4>
 						</div>	
-						<div class="footer__carts">
+						<div class="footer__carts footer__cart_hide">
 							<a href="#" class="footer__cart">{{mixins.icon('master')}}</a>
 							<a href="#" class="footer__cart">{{mixins.icon('PayPay')}}</a>
 							<a href="#" class="footer__cart">{{mixins.icon('visa')}}</a>
 						</div>
 					</div>
 				</div>
-				<div class="footer__col">
+				<div class="footer__col footer__col_sm">
 					<div class="footer__subtitle">
 						<h4 class="title-xs title-xs_small">
 							Офис
@@ -93,7 +97,18 @@
 					</div>
 				</div>
 			</div>
-			
+			<div class="footer__row footer__row_show">
+				<div class="footer__subtitle">
+					<h4 class="title-xs title-xs_small">
+						Принимаем платежи
+					</h4>
+				</div>	
+				<div class="footer__carts footer__cart_hide">
+					<a href="#" class="footer__cart">{{mixins.icon('master')}}</a>
+					<a href="#" class="footer__cart">{{mixins.icon('PayPay')}}</a>
+					<a href="#" class="footer__cart">{{mixins.icon('visa')}}</a>
+				</div>
+			</div>
 		</div>
 		<div class="footer__bottom">
 			<p class="copy">© 2017 ESL Global</p>
@@ -103,10 +118,7 @@
 					<img src="./img/Vintage_logo.svg" alt="logo">
 				</a>
 			</div>
-			
 		</div>
-
-		
 	</div>
 </div>
 <!-- end footer -->
