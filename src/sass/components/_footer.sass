@@ -1,30 +1,69 @@
 .footer
 	padding: 55px 0 70px
 	background: #fafafa
+	+xs
+		padding: 50px 0 
 	p
 		line-height: 30px
+		+xs
+			line-height: 16px
+			font-size: 12px
 	&__logo
-		margin-bottom: 70px 
+		margin-bottom: 70px
+		+r(1199)
+			margin-bottom: 200px
+		+xs
+			display: none
 	&__top
 		display: flex
 		justify-content: space-between
+		+xs
+			display: block
 	&__icon
 		width: 195px
 		flex: none
-		+sm
+		+r(1199)
 			width: 250px
+		+xs
+			margin-bottom: 35px
 	&__info
 		display: flex
 		flex-wrap: wrap
 	&__col
 		width: 195px
-		+sm
+		+r(1199)
 			width: 50%
+		&_hide
+			+xs
+				display: none
+		&_xs
+			+xs
+				width: 50%
+		&_md
+			+xs
+				width: 100%
+				order: -1
+				display: flex
+				justify-content: space-between
+
 	&__subtitle
 		margin-bottom: 4px
 		line-height: 40px
 	&__row
 		margin-bottom: 18px
+		&_hide
+			display: block
+			margin-bottom: 0
+			+xs
+				display: none
+		&_show
+			display: none
+			+xs
+				display: block
+		&_xs
+			+xs
+				width: 50%
+				margin-bottom: 32px
 	&__soc-icons
 		display: flex
 		justify-content: space-between
