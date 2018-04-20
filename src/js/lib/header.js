@@ -8,6 +8,11 @@ $('.js-lang-text').hover(function() {
 
 //menu popup
 
+$(document).ready(function() {
+  $('.header__menu-btn, .header-mobile__menu-button-close').click(function() {
+    $('.header-mobile').slideToggle('slow');
+  });
+});
 // $('.header__menu-btn').click(function() {
 //   $('.header-mobile').addClass('is-active');
 // });
@@ -15,8 +20,3 @@ $('.js-lang-text').hover(function() {
 //   $('.header-mobile').removeClass('is-active');
 // });
 
-$(document).ready(function() {
-  $('.header__menu-btn, .header-mobile__menu-button-close').click(function() {
-    $('.header-mobile').slideToggle('slow');
-  });
-});
