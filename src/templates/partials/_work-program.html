@@ -1,0 +1,132 @@
+{% set
+list = [
+	{
+		img: 'img/base1.svg',
+		number: '1',
+		button: true,
+		title: 'Оставляете заявку',
+		descr: 'Наш менеджер свяжется в удобное для вас время, где вы пройдете онлайн-собеседование на знание английского языка'
+	},
+	{
+		img: 'img/base3.svg',
+		title: 'Подаете документы',
+		itemmt: true,
+		descr: 'Нам нужны загранпаспорт, копия гражданского паспорта и две фотографии 3х4. Принимаем документы в киевском офисе и онлайн.',
+		number: '2'
+	},
+	{
+		img: 'img/base5.svg',
+		title: 'Оплачиваете часть программы',
+		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.',
+		number: '3'
+	},
+	{
+		img: 'img/base7.svg',
+		title: 'Летите в Пекин',
+		descr: 'В аэропорту вас встретит сотрудник ESL Global и отвезёт в уже забронированный хостел на новенькой Tesla.',
+		number: '4'
+	},
+	{
+		img: 'img/base1.svg',
+		number: '5',
+		title: 'Проходите тренинг',
+		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.'
+	},
+	{
+		img: 'img/base3.svg',
+		title: 'Устраивайтесь на работу',
+		descr: 'В аэропорту вас встретит сотрудник ESL Global и отвезёт в уже забронированный хостел на новенькой Tesla.',
+		number: '6'
+	},
+	{
+		img: 'img/base5.svg',
+		title: 'Переезжаете в новый дом',
+		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.',
+		number: '7'
+	},
+	{
+		img: 'img/base7.svg',
+		title: 'Поздравляем! Теперь вы живете в Китае, занимаетесь любимым делом и зарабатываете на этом.',
+		number: '8'
+	}
+]
+%},
+{% set
+list2 = [
+	{
+		img: 'img/base1.svg',
+		number: '2',
+		title: 'Оставляете заявку',
+		descr: 'Наш менеджер свяжется в удобное для вас время, где вы пройдете онлайн-собеседование на знание английского языка'
+	},
+	{
+		img: 'img/base3.svg',
+		title: 'Оплачиваете часть программы',
+		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.',
+		number: '4'
+	},
+	{
+		img: 'img/base5.svg',
+		title: 'Оплачиваете часть программы',
+		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.',
+		number: '6'
+	},
+	{
+		img: 'img/base7.svg',
+		title: 'Оплачиваете часть программы',
+		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.',
+		number: '8'
+	}
+]
+%}
+
+
+<!-- begin work-program -->
+<div class="work-program">
+	<div class="work-program__in in">
+		<div class="work-program__title">
+			<h2 class="title-md">Давайте разберемся, как работает программа ESL Global</h2>
+		</div>
+		<div class="work-program__subtitle">
+			<h4 class="title-xs">Например, отправиться в Китай одному в путешествие обойдется вам от 1000$ до 2100$.</h4>
+		</div>
+	</div>
+	<div class="work-program__bg-j">
+		<img src="img/icJ.svg" alt="img">
+	</div>
+	<div class="work-program__bg-j-sm">
+		<img src="img/iconj.svg" alt="img">
+	</div>
+	<div class="work-program__bg">
+		<img src="img/program-bg.svg" alt="img">
+	</div>		
+	<div class="work-program__in in">
+		<div class="work-program__wrap">
+			<div class="work-program__in">
+				<div class="work-program__list list-work">
+					{% for item in list %}
+					<div class="list-work__item {% if item.itemmt %}list-work__item_mt{% endif %}">
+						<div class="list-work__bg">
+							<img src="{{item.img}}" alt="img">
+							<span class="list-work__number">{{item.number}}</span>
+						</div>
+						<div class="list-work__title">
+							<h3 class="title-sm">{{item.title}}</h3>
+						</div>
+						<div class="list-work__descr">
+							<p>{{item.descr}}</p>
+						</div>
+						{% if item.button %}
+						<div class="list-work__button">
+							<button class="button">Отправить заявку</button>
+						</div>
+						{% endif %}
+						
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end work-program -->

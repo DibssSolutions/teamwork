@@ -26,8 +26,8 @@ body
 .title-sm
 	font-family: $Panton
 	font-size: 30px
-	line-height: 48px
-	letter-spacing: 0.25em
+	// line-height: 48px
+	// letter-spacing: 0.25em
 	font-weight: 600
 
 .title-xs
@@ -90,7 +90,10 @@ body
 	max-width: 1045px
 	padding: 0 20px
 	position: relative
-	margin: 0 auto 
+	margin: 0 auto
+	+md
+		max-width: 560px
+		padding: 15px 
 
 .button
 	padding: 15px 0
@@ -103,3 +106,14 @@ body
 	background: $crimson
 	border-radius: 30px
 	letter-spacing: 1.1px
+	border: 1px solid $crimson
+	box-sizing: border-box
+	transition: color, background 1s
+	&:hover
+		color: $crimson
+		background: #FFF
+	&.disabled
+		background: transparent
+		color: rgba(#373e41, 0.2)
+		border: 1px solid rgba(#373e41, 0.2)
+

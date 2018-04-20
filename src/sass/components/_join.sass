@@ -1,16 +1,39 @@
 .join
 	position: relative
-	padding: 40px 0 118px
-	overflow: hidden
+	padding: 67px 0 118px
 	&__bg
 		position: absolute
 		left: 50%
 		top: 50%
-		max-width: 854px
+		max-width: 465px
 		width: 100%
-		margin-left: 20%
-		margin-top: -44px
+		margin-left: 1.5%
+		margin-top: -67px
 		transform: translate(-50%, -50%)
+		+md
+			margin-left: -45%
+			margin-top: -135px
+		+xs
+			display: none
+		img
+			width: 100%
+			display: block
+	&__bg-small
+		position: absolute
+		left: 50%
+		top: 50%
+		max-width: 386px
+		width: 100%
+		margin-left: 49%
+		margin-top: -78px
+		transform: translate(-50%, -50%)
+		+md
+			margin-left: 44%
+			margin-top: -147px
+		+xs
+			max-width: 262px
+			margin-left: 0
+			margin-top: 0 
 		img
 			width: 100%
 			display: block
@@ -22,6 +45,8 @@
 		margin-bottom: 32px
 		position: relative
 		max-width: 390px
+		+md
+			max-width: 100%
 	&__form
 		position: relative
 		
@@ -36,6 +61,9 @@
 			width: 290px
 		&:focus
 			border-bottom: 1px solid $grey
+			&.open
+				border-bottom: 1px solid $crimson
+
 	&__field
 		position: relative
 		.input:focus ~ .form__focus,
