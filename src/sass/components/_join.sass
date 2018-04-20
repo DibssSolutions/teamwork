@@ -17,19 +17,42 @@
 	&__title
 		margin-bottom: 55px
 		position: relative
-		width: 502px
+		max-width: 502px
 	&__subtitle
 		margin-bottom: 32px
 		position: relative
 		max-width: 390px
 	&__form
 		position: relative
-		.input
-			border-bottom: 1px solid #f2f2f2
-			padding: 25px 0
-			width: 321px
-			background: transparent
-
+		
 .form
+	.input
+		border-bottom: 1px solid rgba(#000, 0.05)
+		padding: 25px 0
+		width: 321px
+		background: transparent
+		transition: 2s
+		+xs
+			width: 290px
+		&:focus
+			border-bottom: 1px solid $grey
+	&__field
+		position: relative
+		.input:focus ~ .form__focus,
+		.input:visited ~ .form__focus
+			transform: translateY(-22px)	
 	&__submit
 		margin-top: 49px
+	&__focus
+		position: absolute
+		display: block
+		top: 24px
+		transition: transform 0.3s
+	&__error
+		font-size: 12px
+		color: $crimson
+		padding-top: 12px
+		opacity: 0
+		display: block
+		&.open
+			opacity: 1
