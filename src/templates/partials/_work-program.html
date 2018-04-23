@@ -99,7 +99,7 @@ list2 = [
 	</div>
 	<div class="work-program__bg">
 		<img src="img/program-bg.svg" alt="img">
-	</div>		
+	</div>
 	<div class="work-program__in in">
 		<div class="work-program__wrap">
 			<div class="work-program__in">
@@ -107,7 +107,9 @@ list2 = [
 					{% for item in list %}
 					<div class="list-work__item {% if item.itemmt %}list-work__item_mt{% endif %}">
 						<div class="list-work__bg">
-							<img src="{{item.img}}" alt="img">
+							<div class="list-work__icon">
+								<img src="{{item.img}}" alt="img">
+							</div>				
 							<span class="list-work__number">{{item.number}}</span>
 						</div>
 						<div class="list-work__title">
