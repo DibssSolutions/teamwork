@@ -18,6 +18,27 @@
 		transform-origin: center
 	&__prev
 		transform: rotate(-180deg)
+	&__item
+		background: $yellow
+		height: 12px
+		width: 12px
+		display: block
+		border-radius: 50%
+		margin-right: 20px
+	&__dots
+		display: inline-block
+		position: absolute
+		text-align: center
+		left: 0
+		right: 0
+		bottom: 0
+		&  .slick-active .slider__item
+			background: $crimson 
+		li
+			display: inline-block
+			
+
+	
 
 
 .client
@@ -41,3 +62,6 @@
 		margin-bottom: 87px
 		p
 			line-height: 30px
+	&__link
+		text-align: right
+		display: block
