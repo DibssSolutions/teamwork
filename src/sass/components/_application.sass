@@ -1,0 +1,81 @@
+.application
+	padding: 157px 0 102px
+	position: relative
+	&__bg
+		top: 15px
+		width: 771px
+		position: absolute
+		left: 36%
+		img
+			display: block
+			max-width: 100%
+	&__wrap
+		display: flex
+		align-items: flex-end
+	&__info
+		max-width: 410px
+		margin-right: 25px 
+	&__row
+		display: flex
+	&__title
+		margin-bottom: 57px
+		// max-width: 410px
+	&__descr
+		max-width: 322px
+		margin-bottom: 45px
+	&__subtitle
+		margin-bottom: 32px
+		font-size: 18px
+		letter-spacing: 0.9px
+	&__list
+		margin-bottom: 50px
+		max-width: 383px
+	&__icon
+		&:not(:last-child)
+			margin-right: 16px
+
+.list-appl
+	li
+		margin-bottom: 14px
+		position: relative
+		padding-left: 25px
+		line-height: 24px 
+		&:before
+			content: ''
+			position: absolute
+			height: 6px
+			width: 6px
+			background: $violet
+			border-radius: 50%
+			top: 10px
+			left: 0
+
+.icon-app
+	display: flex
+	background: $grey
+	border-radius: 40px
+	width: 280px 
+	justify-content: center
+	height: 80px
+	align-items: center
+	text-decoration: none
+	&__img
+		margin-right: 19px
+		width: 40px
+		.icon-apple
+			font-size: 40px
+			fill: #fff
+	&__text-small
+		font-size: 10px
+		font-weight: 700
+		line-height: 30px
+		text-transform: uppercase
+		letter-spacing: 0.5px
+		color: #fff
+	&__text-big
+		color: #fff
+		font-family: $Panton
+		font-size: 24px
+		font-weight: 400
+		letter-spacing: 1.2px
+

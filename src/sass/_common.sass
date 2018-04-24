@@ -101,9 +101,11 @@ body
 	padding: 0 20px
 	position: relative
 	margin: 0 auto
-	+md
-		max-width: 560px
-		padding: 15px 
+	+r(1279)
+		max-width: 1279px
+		padding: 0 119px 
+	+r(767)
+		padding: 0 15px 
 
 .button
 	padding: 15px 0
@@ -119,6 +121,8 @@ body
 	border: 1px solid $crimson
 	box-sizing: border-box
 	transition: color, background 1s
+	&_small
+		width: 194px
 	&:hover
 		color: $crimson
 		background: #FFF
@@ -127,3 +131,32 @@ body
 		color: rgba(#373e41, 0.2)
 		border: 1px solid rgba(#373e41, 0.2)
 
+.link
+	display: block
+	text-decoration: none
+	max-width: 162px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 25px
+		width: 100%
+		height: 1px
+		background: $grey
+	&__title
+		color: $grey
+		font-size: 10px
+		font-weight: 700
+		line-height: 30px
+		text-transform: uppercase
+		letter-spacing: 0.5px
+	&__icon
+		font-size: 9px
+
+.bg
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	// width: 100%
+	img
+		display: block

@@ -1,3 +1,51 @@
+.feedback
+	padding: 226px 0 206px 
+	position: relative
+	+r(1279)
+		padding-bottom: 92px 
+	+r(767)
+		display: none 
+	&__bg
+		margin-left: 88px
+		top: 0
+		+r(1279)
+			margin-left: 565px
+		img
+			width: 1327px 
+	// &__bg
+	// 	width: 408px
+	// 	position: absolute
+	// 	top: 87px
+	// 	top: 50%
+	// 	left: 50%
+	// 	transform: translate(-50%,-50%)
+	// 	margin-top: -99px
+	// 	margin-left: -21%
+	// 	img
+	// 		width: 100%
+	// 		display: block
+	// &__bg-cb
+	// 	width: 280px
+	// 	position: absolute
+	// 	transform: translate(-50%,-50%)
+	// 	top: 50%
+	// 	left: 50%
+	// 	margin-top: -404px
+	// 	margin-left: 41%
+	// 	img
+	// 		width: 100%
+	// 		display: block
+	// &__bg-cm
+	// 	width: 280px
+	// 	position: absolute
+	// 	transform: translate(-50%,-50%)
+	// 	top: 50%
+	// 	left: 50%
+	// 	margin-top: -100px
+	// 	margin-left: 41%
+	// 	img
+	// 		width: 100%
+	// 		display: block
 .slider
 	position: relative
 	&__prev, &__next
@@ -5,6 +53,7 @@
 		width: 80px
 		background-color: $yellow
 		border-radius: 50%
+		transform: translateY(-50%)
 		top: 50%
 		position: absolute
 		z-index: 10
@@ -13,31 +62,88 @@
 		background-repeat: no-repeat
 		background-size: 14px
 		top: 50%
+		+r(1279)
+			top: 41%
 	&__next
 		right: 0
-		transform-origin: center
+		+r(1279)
+			right: -95px
 	&__prev
-		transform: rotate(-180deg)
-
+		transform: translateY(-50%) rotate(-180deg)
+		+r(1279)
+			left: -95px
+	&__item
+		background: $yellow
+		height: 12px
+		width: 12px
+		display: block
+		border-radius: 50%
+		margin-right: 20px
+	&__dots
+		display: inline-block
+		position: absolute
+		text-align: center
+		left: 0
+		right: 0
+		bottom: 0
+		+r(1279)
+			left: 0
+			text-align: left
+		&  .slick-active .slider__item
+			background: $crimson 
+		li
+			display: inline-block
 
 .client
 	display: flex
 	align-items: flex-end
+	justify-content: space-between
+	+clr
+	+r(1279)
+		display: block
+	// &__col
+	// 	max-width: 405px
+	// 	width: 100%
 	&__col
 		width: 50%
+		+r(1279)
+			width: 100%
+	&__block
+		+r(1279)
+			display: flex
+			align-items: center
 	&__img
 		max-width: 425px
-		padding-top: 138px
-		margin-bottom: 25px
-		padding-left: 30px
+		margin-bottom: 15px
+		margin-left: 30px
+		+r(1279)
+			margin-left: 0
+			margin-right: 23px 
 		img
 			width: 100%
 			display: block
 	&__title
-		margin-bottom: 76px
+		margin-bottom: 55px
+		+clr
+	&__title-wrap
+		float: right
+		width: 50%
+		+r(1279)
+			width: 100%
 	&__sub-title
 		margin-bottom: 55px
+		max-width: 405px
+		+r(1279)
+			max-width: 100%
 	&__descr
 		margin-bottom: 87px
+		max-width: 405px
+		+r(1279)
+			max-width: 100%
+			margin-bottom: 60px
 		p
 			line-height: 30px
+			letter-spacing: 0.7px 
+	&__link
+		float: right
+		display: block
