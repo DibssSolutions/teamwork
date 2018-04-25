@@ -1,0 +1,177 @@
+.ff-section
+	position: relative
+	min-height: 2362px
+	&__alphabet
+		position: absolute
+		top: 45%
+		left: 50%
+		height: 2020px
+		transform: translate(-50%, -50%)
+		z-index: -1
+		img
+			height: 100%
+	&__container
+		padding-top: 85px
+		z-index: 1
+		&.inner
+			+sm
+				padding: 0 119px
+				
+	&__title
+		margin: 0 0 65px auto
+		max-width: 410px
+		+md
+			max-width: 100%
+			margin: 0 auto 60px
+		.title-md
+			margin-bottom: 66px
+		span
+			font-family: $SFUIDisplay
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.9px
+	&__wrap
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__left-col
+		flex: 1 1 48%
+		margin-right: 10px
+		text-align: center
+		font-family: $SFUIDisplay
+		+sm
+			margin-right: 0
+		.title-sm
+			color: $white
+			font-size: 30px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.9px
+			margin-bottom: 20px
+	&__price-program
+		color: $white
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+	&__up-block
+		margin-top: 20px
+		border-radius: 10px	
+		background-color: $white
+		padding: 20px 0
+		title-xs
+	&__cont	
+		.title-xs
+			color: $dark
+			font-size: 18px
+			font-weight: 700
+			line-height: 30px
+			letter-spacing: 0.9px	
+	&__price
+		padding: 0 40px		
+		text-align: left
+		color: $dark
+		font-size: 14px
+		font-weight: 300
+		letter-spacing: 0.7px
+		line-height: 30px		
+	&__list
+		position: relative
+		padding: 15px 0 15px 40px 
+		border-bottom: 2px solid rgba(0,0,0, 0.05)
+		&::before
+			position: absolute
+			content: url(../img/icon-check.png)
+			width: 25px
+			height: 20px
+			top: 30px
+			left: 0px
+			transform: translate(0, -50%)
+	&__sale
+		display: block
+		margin: 50px 0 37px
+		color: $crimson
+		font-family: $Panton
+		font-size: 30px
+		font-weight: 400
+		line-height: 30px
+		letter-spacing: 0.3px
+	&__price-btn
+		background: none
+		padding: 23px 60px
+		border-radius: 30px
+		background-color: $red
+		color: $white
+		font-size: 11px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 1.1px
+		margin-bottom: 37px
+	&__price-text
+		padding: 0 40px	
+		color: $dark
+		font-family: $SFUIDisplay
+		font-size: 12px
+		font-weight: 300
+		line-height: 24px
+		letter-spacing: 0.6px					
+	&__right-col
+		flex: 1 1 48%
+		margin-left: 10px
+		text-align: center
+		+sm
+			display: none
+		.title-sm
+			color: $white
+			font-family: $SFUIDisplay
+			font-size: 30px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.9px
+			margin-bottom: 20px
+	&__sale-program
+		margin: 160px 0
+		.title-md
+			margin-bottom: 65px
+	&__sale-wrap
+		display: flex
+		// align-items: flex-start
+		justify-content: space-between
+		+md
+			flex-wrap: wrap
+			justify-content: center
+	&__center-image
+		width: 320px
+		margin: 0 40px
+		flex: none		
+		+md
+			margin: 40px 0	
+		img
+			width: 100%
+	&__left-column
+		max-width: 365px
+		.title-sm
+			color: $red
+			font-family: $Panton
+			font-size: 30px
+			font-weight: 400
+			line-height: 30px
+			letter-spacing: 0.3px
+	&__right-column
+		text-align: right
+		max-width: 365px
+		.title-sm
+			color: $red
+			font-family: $Panton
+			font-size: 30px
+			font-weight: 400
+			line-height: 30px
+			letter-spacing: 0.3px		
+	&__column-text
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px

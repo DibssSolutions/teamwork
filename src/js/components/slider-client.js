@@ -12,3 +12,14 @@ $('.js-slider-client').slick({
   }
 });
 
+$('.js-radius-slider').slick({
+  fade: true,
+  speed: 700,
+  cssEase: 'linear',
+  infinite: true,
+  prevArrow: '<button type="button" class="radius-slider__prev"></button>',
+  nextArrow: '<button type="button" class="radius-slider__next"></button>',
+});
+
+
+
