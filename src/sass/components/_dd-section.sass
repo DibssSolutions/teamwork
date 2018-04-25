@@ -1,0 +1,195 @@
+.dd-section
+	position: relative
+	width: 100%
+	min-height: 1900px
+	padding: 26px 0
+	margin-bottom: 150px
+	&__alphabet
+		position: absolute
+		top: 120px
+		left: 50%
+		transform: translate(-50%, 0)
+		z-index: -1
+		img
+			width: 1600px
+			height: 1900px
+		+sm
+			top: 20px	
+	&__container
+		margin-top: 500px
+		z-index: 1
+		+sm
+			margin-top: 200px
+		&.inner
+			+md
+				padding: 0 119px
+			+sm
+				padding: 0 15px
+	&__title
+		margin: 0 20px 130px auto
+		max-width: 410px
+		+md
+			margin: 0 auto 60px
+		.title-md
+			margin-bottom: 66px
+		span
+			font-family: $SFUIDisplay
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.9px
+	&__left-col
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+md
+			flex-wrap: wrap
+			justify-content: center
+			flex-direction: column			
+	&__working-hours
+		display: flex
+	&__up-block
+		max-width: 410px
+		margin-right: 20px
+		+sm
+			margin-right: 0
+		p
+			color: $grey
+			font-family: $SFUIDisplay
+			font-size: 14px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.7px
+	&__line
+		display: block	
+		width: 80px
+		height: 1px
+		background-color: $grey
+		opacity: 0.6
+		margin: 40px 0 25px
+	&__right-col
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 100px
+		+md
+			flex-wrap: wrap
+			justify-content: center
+			flex-direction: column-reverse
+	&__bottom-block
+		max-width: 410px
+		p
+			color: $grey
+			font-family: $SFUIDisplay
+			font-size: 14px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.7px
+	&__title-block
+		h4
+			color: $grey			
+	&__working-hours
+		margin-top: 20px	
+	&__image-clock
+		width: 41px
+		height: 41px
+		margin-right: 10px
+		img
+			opacity: 0.5
+	&__list
+		h5
+			color: $grey
+			font-weight: 300
+			font-size: 18px
+			letter-spacing: 0.9px
+			margin-bottom: 15px
+			padding-top: 5px
+		ul
+			padding-left: 18px
+			margin-bottom: 20px
+	&__text
+		display: block
+		position: relative
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 14px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.7px
+		&::before
+			position: absolute
+			top: 16px
+			left: -17px
+			content: ''
+			width: 10px
+			height: 1px
+			background-color: $grey
+	
+.radius-slider
+	position: relative
+	margin-top: 20px
+	width: 420px
+	+sm
+		width: 290px
+	&__bg
+		width: 420px
+		height: 420px
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		+sm
+			width: 290px
+			height: 290px
+
+.radius-slider__prev
+	position: absolute
+	background-color: $yellow
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	top: 75%
+	left: 3%
+	transform: translate(0, -50%)
+	z-index: 2
+	&::after
+		position: absolute
+		content: url(../img/icon_arrow.svg)
+		width: 8px
+		top: 48%
+		left: 45%
+		transform: rotate(180deg) translate(50%, 50%)
+		opacity: 0.6
+
+.radius-slider__next
+	position: absolute
+	background-color: $yellow
+	width: 79px
+	height: 79px
+	border-radius: 50%
+	top: 90%
+	left: 20%
+	transform: translate(-50%, -50%)
+	&::after
+		position: absolute
+		content: url(../img/icon_arrow.svg)
+		width: 15px
+		top: 52%
+		left: 52%
+		transform: translate(-50%, -50%)
+		opacity: 0.6
+	+sm
+		width: 69px
+		height: 69px
+		top: 92%
+		left: 25%
+.radius-slider_right
+	.radius-slider__prev
+		top: 90%
+		left: 70%
+		+sm
+			top: 95%
+			left: 62%
+	.radius-slider__next
+		top: 75%
+		left: 89%

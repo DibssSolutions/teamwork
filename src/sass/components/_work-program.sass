@@ -1,0 +1,162 @@
+.work-program
+	position: relative
+	// padding-bottom: 67px
+	padding-top: 145px
+	&__bg
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		margin-top: 198px
+		// width: 100%
+		img
+			+r(1279)
+				height: 100% 
+		+r(1600)
+			width: 1600px
+		+r(1279)
+			height: 2446px
+			margin-top: 132px
+			margin-left: 36px
+		+r(767)
+			height: 1906px
+		// +md
+		// 	margin-top: -560px
+		// img
+		// 	width: 100%
+		// 	display: block
+	&__in
+		// margin-bottom: 256px
+		+r(1279)
+			margin-bottom: 126px
+		+r(767)
+			margin-bottom: 137px 
+	&__bg-j
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 414px
+		margin-top: -882px
+		margin-left: 118px
+		+r(1279)
+			margin-top: -1144px
+			margin-left: -260px
+		img
+			display: block
+			width: 100%
+	&__bg-j-sm
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 230px
+		margin-top: -801px
+		margin-left: 460px
+		+r(1279)
+			margin-top: -1066px
+			margin-left: 95px
+		img
+			display: block
+			width: 100%
+	&__title
+		max-width: 500px
+		position: relative
+		margin-bottom: 10px
+		margin-bottom: 256px
+		z-index: 1
+	&__subtitle
+		margin-bottom: 184px
+		max-width: 500px
+		position: relative
+		z-index: 1
+		display: none
+		+r(1279)
+			margin-bottom: 126px
+	&__wrap
+		max-width: 887px
+		margin-left: 82px
+		position: relative
+		+md
+			margin-left: 0
+	&__col
+		&_mt
+			padding-top: 160px
+
+.list-work
+	+clr
+	&__item
+		max-width: 354px
+		position: relative
+		margin-bottom: 141px
+		+r(1279)
+			max-width: 100%
+			margin-bottom: 58px
+		+r(767)
+			margin-bottom: 83px 
+		&:nth-child(even)
+			float: right
+			// max-width: 360px
+			+r(1279)
+				text-align: right
+			+r(767)
+				float: none
+				text-align: left
+			& .list-work__bg
+				+r(1279)
+					margin-left: 58%
+		&:nth-child(odd)
+			float: left
+			+r(767)
+				float: none
+		&_mt
+			margin-top: 165px
+			+md
+				margin-top: 0
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		margin-top: -124px
+		margin-left: -72px
+		display: flex
+		align-items: center
+		img
+			width: 100%
+			display: block
+	&__title
+		margin-bottom: 31px
+		position: relative
+		// max-width: 351px
+		letter-spacing: 0.3px
+		line-height: 47px
+		z-index: 1
+		+r(767)
+			margin-bottom: 41px
+			line-height: 30px
+	&__descr
+		font-size: 18px
+		line-height: 30px
+		position: relative
+		letter-spacing: 0.9px
+		margin-bottom: 51px
+		// max-width: 350px
+		+r(1279)
+			margin-bottom: 28px
+		+r(767)
+			display: none
+	&__number
+		font-size: 234px
+		color: #fff
+		margin-left: 11px
+		font-weight: 900
+		letter-spacing: 2.34px
+		font-family: $Panton
+		display: block
+		+r(1279)
+			font-size: 191.8px
+	&__icon
+		flex: none
+		+r(1279)
+			max-width: 150px
+		
