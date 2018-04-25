@@ -1,8 +1,8 @@
 import svg4everybody from 'svg4everybody';
-import header from './lib/header.js';
-import './lib/valid-form.js';
-import './lib/slider-client.js';
-
+import header from './components/header.js';
+import './components/valid-form.js';
+import './components/slider-client.js';
+import './components/video.js';
 svg4everybody();
 
 

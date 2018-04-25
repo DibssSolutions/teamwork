@@ -1,16 +1,19 @@
 .application
-	padding: 157px 0 102px
+	padding: 56px 0 102px
 	position: relative
+	+r(1023)
+		padding-bottom: 0
 	+r(767)
 		display: none
 	&__bg
-		top: 15px
+		top: -144px
 		width: 771px
 		position: absolute
-		left: 36%
+		left: 31%
 		+r(1023)
 			position: relative
-			left: -34%
+			left: -168px
+			margin-bottom: 23px
 		img
 			display: block
 			max-width: 100%
@@ -24,11 +27,11 @@
 		margin-right: 25px
 		+r(1023)
 			max-width: 100%
+			margin-bottom: 70px
 	&__row
 		display: flex
 	&__title
 		margin-bottom: 57px
-		// max-width: 410px
 	&__descr
 		max-width: 322px
 		margin-bottom: 45px
