@@ -2,12 +2,14 @@
 	position: relative
 	// padding-bottom: 67px
 	padding-top: 145px
+	+r(767)
+		padding-top: 100px
 	&__bg
 		position: absolute
 		left: 50%
-		top: 50%
-		transform: translate(-50%,-50%)
-		margin-top: 198px
+		top: 0
+		transform: translateX(-50%)
+		margin-top: 316px
 		// width: 100%
 		img
 			+r(1279)
@@ -16,10 +18,12 @@
 			width: 1600px
 		+r(1279)
 			height: 2446px
-			margin-top: 132px
-			margin-left: 36px
+			margin-top: 281px
+			margin-left: 31px
 		+r(767)
 			height: 1906px
+			margin-top: 165px
+			margin-left: 222px
 		// +md
 		// 	margin-top: -560px
 		// img
@@ -30,32 +34,40 @@
 		+r(1279)
 			margin-bottom: 126px
 		+r(767)
-			margin-bottom: 137px 
+			margin-bottom: 115px
 	&__bg-j
 		position: absolute
 		left: 50%
-		top: 50%
-		transform: translate(-50%, -50%)
+		top: 0
+		transform: translateX(-50%)
 		width: 414px
-		margin-top: -882px
+		// margin-top: -882px
 		margin-left: 118px
 		+r(1279)
-			margin-top: -1144px
-			margin-left: -260px
+			margin-top: 0
+			margin-left: -253px
+		+r(767)
+			width: 267px
+			margin-top: 0
+			margin-left: -167px
 		img
 			display: block
 			width: 100%
 	&__bg-j-sm
 		position: absolute
 		left: 50%
-		top: 50%
-		transform: translate(-50%, -50%)
+		top: 0
+		transform: translateX(-50%)
 		width: 230px
-		margin-top: -801px
+		margin-top: 0
 		margin-left: 460px
 		+r(1279)
-			margin-top: -1066px
+			margin-top: 0
 			margin-left: 95px
+		+r(767)
+			margin-top: 0
+			margin-left: 54px
+			width: 143px
 		img
 			display: block
 			width: 100%
@@ -63,8 +75,10 @@
 		max-width: 500px
 		position: relative
 		margin-bottom: 10px
-		margin-bottom: 256px
+		margin-bottom: 227px
 		z-index: 1
+		+r(767)
+			margin-bottom: 115px
 	&__subtitle
 		margin-bottom: 184px
 		max-width: 500px
@@ -74,7 +88,7 @@
 		+r(1279)
 			margin-bottom: 126px
 	&__wrap
-		max-width: 887px
+		// max-width: 887px
 		margin-left: 82px
 		position: relative
 		+md
@@ -91,9 +105,16 @@
 		margin-bottom: 141px
 		+r(1279)
 			max-width: 100%
-			margin-bottom: 58px
+			margin-bottom: 82px
 		+r(767)
-			margin-bottom: 83px 
+			margin-bottom: 71px
+			min-height: 145px
+			padding-top: 60px 
+		&:not(:first-child)
+			+r(1279)
+				margin-bottom: 47px
+			+r(767)
+				margin-bottom: 27px 
 		&:nth-child(even)
 			float: right
 			// max-width: 360px
@@ -103,24 +124,35 @@
 				float: none
 				text-align: left
 			& .list-work__bg
+				right: 255px
 				+r(1279)
-					margin-left: 58%
+					right: -66px
+				+r(767)
+					// margin-right: 26px
 		&:nth-child(odd)
 			float: left
 			+r(767)
 				float: none
+			& .list-work__bg
+				left: -66px
+				// +r(1279)
+				// 	margin-left: 58%
+				+r(767)
+					// margin-right: 36px
 		&_mt
 			margin-top: 165px
-			+md
+			+r(1279)
 				margin-top: 0
 	&__bg
 		position: absolute
-		left: 0
+		line-height: 145px
 		top: 0
-		margin-top: -124px
-		margin-left: -72px
+		margin-top: -48px
+		// left: -66px
 		display: flex
-		align-items: center
+		align-items: flex-end
+		+r(767)
+			margin-top: 0
 		img
 			width: 100%
 			display: block
@@ -159,4 +191,7 @@
 		flex: none
 		+r(1279)
 			max-width: 150px
+	&__button
+		position: relative
+		z-index: 1 
 		
