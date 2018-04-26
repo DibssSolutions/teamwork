@@ -1,26 +1,28 @@
 .gg-section
 	position: relative
-	height: 1520px
-	margin-top: 170px
+	min-height: 1520px
+	margin-top: 100px
+	margin-bottom: 50px
 	+sm
-		height: 1000px
+		min-height: 850px
+		margin-top: 0
 	&__alphabet
 		position: absolute
-		top: 52%
+		top: 0
 		left: 50%
 		height: 1520px
-		transform: translate(-50%, -50%)
+		transform: translate(-50%, 0)
 		z-index: -1
 		img
 			height: 100%
-	&__container
+	&__inner
 		padding-top: 215px
 		z-index: 1
 		&.inner
 			+md
-				padding: 0 119px
+				padding: 215px 119px 0
 			+sm
-				padding: 0 15px
+				padding: 215px 15px 0
 				
 	&__title
 		margin: 0 auto 65px 0

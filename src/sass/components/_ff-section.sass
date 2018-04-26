@@ -1,21 +1,23 @@
 .ff-section
 	position: relative
-	min-height: 2362px
+	min-height: 1900px
 	margin-top: 200px
+	+md
+		margin-top: 0
 	+sm
-		margin-top: 120px
+		margin-top: 150px
 	&__alphabet
 		position: absolute
 		top: 0
 		left: 50%
-		height: 2220px
+		height: 2120px
 		transform: translate(-50%, 0)
 		z-index: -1
 		+sm
 			height: 2250px
 		img
 			height: 100%
-	&__container
+	&__inner
 		padding-top: 85px
 		z-index: 1
 		&.inner
@@ -150,6 +152,7 @@
 		background: none
 		padding: 23px 60px
 		border-radius: 30px
+		border: 2px solid $red
 		background-color: $red
 		color: $white
 		font-size: 11px
@@ -157,6 +160,10 @@
 		text-transform: uppercase
 		letter-spacing: 1.1px
 		margin-bottom: 37px
+		transition: background-color 0.3s, color 0.3s
+		&:hover
+			background-color: $white
+			color: $red
 	&__price-text
 		padding: 0 40px	
 		color: $dark
@@ -164,16 +171,9 @@
 		font-size: 12px
 		font-weight: 300
 		line-height: 24px
-		letter-spacing: 0.6px					
-	// &__col
-	// 	flex: 1 1 48%
-	// 	margin-left: 10px
-	// 	text-align: center
-	// 	+sm
-	// 		margin-left: 0
-	// 		width: 100%
+		letter-spacing: 0.6px
 	&__sale-program
-		margin: 120px 15px 50px 
+		margin: 70px 15px 50px 
 		.title-md
 			margin-bottom: 65px
 	&__more-info
@@ -200,14 +200,16 @@
 			display: block	
 	&__sale-wrap
 		display: flex
+		align-items: flex-start
 		justify-content: space-between
 		+md
+			display: flex
 			flex-direction: column
 			justify-content: center
 		+sm
 			display: none
-		+rmin(768)
-			display: block !important
+		// +rmin(768)
+		// 	display: block !important
 				
 	&__center-image
 		width: 310px
