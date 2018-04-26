@@ -1,0 +1,106 @@
+.video
+	position: relative
+	padding: 254px 0 194px
+	+r(1279)
+		padding: 92px 0 130px 
+	&__in
+		display: flex
+		align-items: center
+		+r(1279)
+			display: block
+	&__bg
+		width: 1440px
+		height: 773px
+		top: 0 
+	&__info
+		max-width: 360px
+		+r(1279)
+			margin-bottom: 70px
+	&__title
+		margin-bottom: 56px
+	&__descr
+		color: #344c57
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+	&__content
+		position: absolute
+		left: 43%
+		top: 120px
+		width: 603px
+		height: 603px
+		border-radius: 50%
+		background-color: #000
+		overflow: hidden
+		+r(767)
+			width: 290px
+			height: 290px
+			margin: 0 auto 
+		&.is-play
+			&:hover
+				.video__pause
+					visibility: visible
+					opacity: 1
+		+r(1279)
+			position: relative
+			left: 84px
+			top: 0
+		+r(767)
+			left: 15px
+		video
+			width: 603px
+			height: 603px
+			border-radius: 50%
+			display: block
+			+r(767)
+				width: 290px
+				height: 290px 
+	&__play, &__pause
+		height: 175px
+		width: 175px
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		transition: opacity .3s, visibility 0.3s
+		&:before
+			width: 603px
+			height: 603px
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)	
+	&__play
+		border: 1px solid $white
+		transition: border 1s
+		&:hover
+			border: 1px solid $green
+		&:hover .icon-icon_play
+			fill: $green
+		.is-play &
+			opacity: 0
+			visibility: visible 
+		& .icon-icon_play
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			font-size: 20px
+			fill: $white
+			transition: fill 0.3s
+	&__pause
+		opacity: 0
+		visibility: hidden
+		border: 1px solid $green
+		& .icon-icon_pause
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			font-size: 20px
+			fill: $green
+		
+			
