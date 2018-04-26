@@ -12,9 +12,9 @@
 		left: 50%
 		transform: translate(-50%, 0)
 		z-index: -1
+		height: 1900px
 		img
-			width: 1600px
-			height: 1900px
+			height: 100%
 		+sm
 			top: 20px	
 	&__container
@@ -152,10 +152,12 @@
 	width: 40px
 	height: 40px
 	border-radius: 50%
+	border: 2px solid $yellow
 	top: 75%
 	left: 3%
 	transform: translate(0, -50%)
 	z-index: 2
+	transition: background-color 0.3s
 	&::after
 		position: absolute
 		content: url(../img/icon_arrow.svg)
@@ -164,6 +166,8 @@
 		left: 45%
 		transform: rotate(180deg) translate(50%, 50%)
 		opacity: 0.6
+	&:hover
+		background-color: $white
 
 .radius-slider__next
 	position: absolute
@@ -171,9 +175,11 @@
 	width: 79px
 	height: 79px
 	border-radius: 50%
+	border: 2px solid $yellow
 	top: 90%
 	left: 20%
 	transform: translate(-50%, -50%)
+	transition: background-color 0.3s
 	&::after
 		position: absolute
 		content: url(../img/icon_arrow.svg)
@@ -182,6 +188,8 @@
 		left: 52%
 		transform: translate(-50%, -50%)
 		opacity: 0.6
+	&:hover
+		background-color: $white
 	+sm
 		width: 69px
 		height: 69px
