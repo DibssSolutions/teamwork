@@ -1,13 +1,18 @@
 .ff-section
 	position: relative
 	min-height: 2362px
+	margin-top: 200px
+	+sm
+		margin-top: 120px
 	&__alphabet
 		position: absolute
-		top: 45%
+		top: 0
 		left: 50%
-		height: 2020px
-		transform: translate(-50%, -50%)
+		height: 2220px
+		transform: translate(-50%, 0)
 		z-index: -1
+		+sm
+			height: 2250px
 		img
 			height: 100%
 	&__container
@@ -15,14 +20,18 @@
 		z-index: 1
 		&.inner
 			+sm
-				padding: 0 119px
+				padding: 0
 				
 	&__title
-		margin: 0 0 65px auto
+		margin: 0 0 150px auto
 		max-width: 410px
 		+md
 			max-width: 100%
-			margin: 0 auto 60px
+			margin: 0 auto 130px
+			padding: 70px 15px 0
+		+xs
+			padding-top: 170px
+			margin-bottom: 40px	
 		.title-md
 			margin-bottom: 66px
 		span
@@ -35,33 +44,73 @@
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
-	&__left-col
+		+sm
+			flex-wrap: wrap
+			flex-direction: column
+			align-items: center
+	&__col
 		flex: 1 1 48%
-		margin-right: 10px
+		margin-right: 20px
 		text-align: center
 		font-family: $SFUIDisplay
 		+sm
 			margin-right: 0
-		.title-sm
-			color: $white
-			font-size: 30px
-			font-weight: 300
-			line-height: 30px
-			letter-spacing: 0.9px
-			margin-bottom: 20px
+			width: 100%
+	&__accord-btn
+		position: relative
+		display: block
+		background: none
+		color: $white
+		font-size: 30px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+		margin-bottom: 20px
+		&::after
+			position: absolute
+			top: 58%
+			right: 10px
+			content: url(../img/plus.svg)
+			transform: translate(0, -50%)
+			display: none
+			+sm
+				display: block	
+		.is-open.ff-section__col &
+			&::after
+				position: absolute
+				top: 43%
+				right: 10px
+				transform: translate(0, -50%)
+				content: url(../img/minus.svg)
+		+sm
+			width: 93%
+			padding: 20px 0
+			margin: 0 15px
+			border-bottom: 2px solid rgba(255,255,255, 0.5) 
+			font-size: 18px
 	&__price-program
 		color: $white
 		font-size: 18px
 		font-weight: 300
 		line-height: 30px
 		letter-spacing: 0.9px
+		+sm
+			font-size: 14px
 	&__up-block
+		margin-top: 20px
+		.is-open.ff-section__col &
+			+sm
+				display: block
+		+sm
+			display: none
+	&__cont	
 		margin-top: 20px
 		border-radius: 10px	
 		background-color: $white
 		padding: 20px 0
 		title-xs
-	&__cont	
+		+sm
+			border-radius: 0
 		.title-xs
 			color: $dark
 			font-size: 18px
@@ -116,41 +165,59 @@
 		font-weight: 300
 		line-height: 24px
 		letter-spacing: 0.6px					
-	&__right-col
-		flex: 1 1 48%
-		margin-left: 10px
-		text-align: center
-		+sm
-			display: none
-		.title-sm
-			color: $white
-			font-family: $SFUIDisplay
-			font-size: 30px
-			font-weight: 300
-			line-height: 30px
-			letter-spacing: 0.9px
-			margin-bottom: 20px
+	// &__col
+	// 	flex: 1 1 48%
+	// 	margin-left: 10px
+	// 	text-align: center
+	// 	+sm
+	// 		margin-left: 0
+	// 		width: 100%
 	&__sale-program
-		margin: 160px 0
+		margin: 120px 15px 50px 
 		.title-md
 			margin-bottom: 65px
+	&__more-info
+		position: relative
+		background: none
+		padding: 0 20px 5px 0
+		margin-left: 15px
+		color: $grey
+		font-size: 11px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 1.1px
+		border-bottom: 2px solid $grey
+		display: none
+		&::after
+			position: absolute
+			top: 35%
+			right: -2px
+			content: url(../img/icon_arrow.svg)
+			width: 7px
+			height: 7px
+			transform: rotate(90deg) translate(-50%, 50%)
+		+sm
+			display: block	
 	&__sale-wrap
 		display: flex
-		// align-items: flex-start
 		justify-content: space-between
 		+md
-			flex-wrap: wrap
+			flex-direction: column
 			justify-content: center
+		+sm
+			display: none
+		+rmin(768)
+			display: block !important
+				
 	&__center-image
-		width: 320px
-		margin: 0 40px
-		flex: none		
+		width: 310px
+		margin: 0 auto		
 		+md
-			margin: 40px 0	
+			margin: 40px auto	
 		img
 			width: 100%
 	&__left-column
-		max-width: 365px
+		max-width: 375px
 		.title-sm
 			color: $red
 			font-family: $Panton
@@ -158,6 +225,8 @@
 			font-weight: 400
 			line-height: 30px
 			letter-spacing: 0.3px
+		+md
+			margin: 0 auto 0 0	
 	&__right-column
 		text-align: right
 		max-width: 365px
@@ -167,7 +236,9 @@
 			font-size: 30px
 			font-weight: 400
 			line-height: 30px
-			letter-spacing: 0.3px		
+			letter-spacing: 0.3px
+		+md
+			margin: 0 0 0 auto			
 	&__column-text
 		color: $grey
 		font-family: $SFUIDisplay
