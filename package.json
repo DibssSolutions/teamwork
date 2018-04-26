@@ -59,7 +59,7 @@
     "postcss-csso": "^2.0.0",
     "require-dir": "^0.3.2",
     "require-yaml": "^0.0.1",
-    "run-sequence": "^1.1.5",
+    "run-sequence": "^1.2.2",
     "svg4everybody": "^2.1.9",
     "through2": "^2.0.1",
     "webpack": "^2.2.1",
