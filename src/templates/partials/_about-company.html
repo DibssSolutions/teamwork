@@ -1,0 +1,67 @@
+{% set 
+  list = [
+      {
+		bg: '1',
+		icon: './img/icon_support_2.svg',
+		descr: 'Нашим клиентам, их друзьям и родственникам выдают визу с первого раза'
+      },
+       {
+		bg: '2',
+		icon: './img/icon_support_2.svg',
+		descr: 'Жилье — хостел или постоянная квартира — уютные, тихие, недалеко от метро и автобусных остановок'
+      },
+       {
+		bg: '3',
+		icon: './img/icon_support_2.svg',
+		descr: 'По прилету в Китай клиента опекает собственный наставник и помогает в бытовых и рабочих вопросах'
+      },
+       {
+		bg: '4',
+		icon: './img/icon_support_2.svg',
+		descr: 'Общение с линией поддержки и другими участниками в режиме 24/7 — по телефону и через приложение ESL Global'
+      }
+
+  ]
+%}
+
+<!-- begin about-company -->
+<div class="about-company">
+	<div class="about-company__in in">
+		<div class="about-company__row">
+			<div class="about-company__col">
+				<h2 class="title-md">
+					Почему мы хороши в своём деле
+				</h2>
+			</div>
+		</div>
+	</div>
+	<div class="about-company__wrap">
+		<div class="about-company__descr">
+			<p>
+				Мы были первыми в Украине, у кого получилось подойти к работе в Китае системно: отвечать за жилье и трудоустройство, брать на себя рутину с документами и поддерживать связь с клиентами 24/7.
+			</p>
+			<p>
+				С момента основания компании набили немало шишек: кому-то не открывали визу с первого раза, кого-то не брали на работу или процесс затягивался, жилье не всегда было уютным, а соседи — тихими. 
+			</p>
+		</div>
+		<div class="about-company__descr">
+			<p>
+				Зато сейчас нам не стыдно сказать, что ESL Global — единственная в Украине комплексная программа для учителей английского. Мы предусмотрели всё:
+			</p>
+		</div>
+		<div class="about-company__list list-about">
+			{% for item in list %}
+			<div class="list-about__item">
+				<div class="list-about__bg">{{item.bg}}</div>
+				<div class="list-about__icon">
+					<img src="{{item.icon}}" alt="img">
+				</div>
+				<div class="list-about__descr">
+					<p>{{item.descr}}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end about-company -->
