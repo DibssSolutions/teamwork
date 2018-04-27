@@ -1,8 +1,15 @@
 <!-- begin feedback -->
 <div class="feedback">
+	{% if page %}
 	<div class="feedback__bg bg">
 		<img src="img/ESL_Ii.svg" alt="img">
 	</div>
+	{% endif %}
+	{% if about %}
+	<div class="feedback__bag bg">
+		<img src="img/about-bg3.svg" alt="img">
+	</div>
+	{% endif %}
 	<!-- <div class="feedback__bg">
 		<img src="img/icon-I.svg" alt="">
 	</div>
@@ -13,6 +20,7 @@
 		<img src="img/icon-I-cm.svg" alt="">
 	</div> -->
 	<!-- <div class="feedback__bg-small"></div> -->
+	{% if page %}
 	<div class="feedback__in in">
 		<div class="client__title">
 			<div class="client__title-wrap">
@@ -82,5 +90,77 @@
 			</div>
 		</div>
 	</div>
+	{% endif %}
+	{% if about %}
+	<div class="feedback__in in">
+		<div class="client__title">
+			<div class="client__title-wrap">
+				<h2 class="title-md">Отзывы от наших клиентов-учителей из Китая</h2>
+			</div>
+		</div>
+		<div class="feedback__slider slider">
+			<div class="slider__prev"></div>
+			<div class="slider__next"></div>
+			<div class="slider__dots">
+			</div>
+			<div class="slider__slides js-slider-client">
+				<div class="slider__slide" data-title="">
+					<div class="client">
+						<div class="client__col">
+							<div class="client__block">
+								<div class="client__img" style="background-image: url(./img/client.png);">
+									<!-- <img src="./img/client.png" alt="client"> -->
+								</div>
+								<div class="client__name">Татьяна Коваленко, 30 лет</div>
+							</div>
+							
+						</div>
+						<div class="client__col">
+							<div class="client__sub-title">
+								<h4 class="title-xs">"Спасибо «ESL Global» за прекрасную возможность увидеть мир и получить бесценный опыт"</h4>
+							</div>
+							<div class="client__descr">
+								<p>
+									Спасибо «ESL Global» за прекрасную возможность увидеть мир и получить бесценный опыт. Мне приятно работать с профессионалами своего дела и просто с хорошими людьми. Я всегда знаю, что не останусь без помощи и поддержки, и могу быть уверена в своих начинаниях, живя в Китае. Надеюсь и на дальнейшее плодотворное сотрудничество.
+								</p>
+							</div>
+							<a href="#" class="client__link link">
+								<span class="link__title">Посмотреть все отзывы</span>
+								<span class="link__icon">{{mixins.icon('icon_arrow_link')}}</span>
+							</a>
+						</div>					
+					</div>
+				</div>
+				<div class="slider__slide" data-title="">
+					<div class="client">
+						<div class="client__col">
+							<div class="client__block">
+								<div class="client__img" style="background-image: url(./img/client.png);">
+									<!-- <img src="./img/client.png" alt="client"> -->
+								</div>
+								<div class="client__name">Татьяна Коваленко, 30 лет</div>
+							</div>
+							
+						</div>
+						<div class="client__col">
+							<div class="client__sub-title">
+								<h4 class="title-xs">"Спасибо «ESL Global» за прекрасную возможность увидеть мир и получить бесценный опыт"</h4>
+							</div>
+							<div class="client__descr">
+								<p>
+									Спасибо «ESL Global» за прекрасную возможность увидеть мир и получить бесценный опыт. Мне приятно работать с профессионалами своего дела и просто с хорошими людьми. Я всегда знаю, что не останусь без помощи и поддержки, и могу быть уверена в своих начинаниях, живя в Китае. Надеюсь и на дальнейшее плодотворное сотрудничество.
+								</p>
+							</div>
+							<a href="#" class="client__link link">
+								<span class="link__title">Посмотреть все отзывы</span>
+								<span class="link__icon">{{mixins.icon('icon_arrow_link')}}</span>
+							</a>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endif %}
 </div>
 <!-- end feedback -->

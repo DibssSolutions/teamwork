@@ -1,27 +1,54 @@
 .about-company
+	padding-top: 59px
+	position: relative
+	&__bg
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		margin-left: 6%
+		top: 58px   
+	&__page-title
+		margin-bottom: 49px
+	&__page-sub-title
+		position: relative
+		padding-left: 132px
+		margin-bottom: 138px
+		max-width: 650px
+		&:after
+			position: absolute
+			content: ''
+			width: 100px
+			height: 1px
+			background: $grey  
+			left: 4px
+			top: 14px
+			opacity: 0.6
 	&__row
 		+clr
+		margin-bottom: 56px
 	&__col
 		width: 50%
 		float: right
-		margin-bottom: 75px
 	&__wrap
-		max-width: 750px
+		max-width: 744px
 		margin: 0 auto
 	&__descr
 		font-size: 18px
 		line-height: 30px
 		color: $grey
-		margin-bottom: 100px 
+		margin-bottom: 100px
+		position: relative
+		z-index: 1
+		letter-spacing: 0.9px
 		p:not(:last-child)
-			margin-bottom: 40px
+			margin-bottom: 30px
 
 .list-about
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
 	&__item
-		max-width: 362px
+		max-width: 336px
 		position: relative
 		padding-bottom: 70px
 		margin-bottom: 50px
@@ -29,6 +56,8 @@
 		position: absolute
 		font-size: 234px
 		font-weight: 400
+		line-height: 175px
+		top: 53px
 		color: $green
 		font-family: $Panton
 		font-weight: 900
