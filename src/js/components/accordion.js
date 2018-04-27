@@ -1,30 +1,5 @@
-// var acc = document.getElementsByClassName('js-accordion');
-// var i;
 
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener('click', function(event) {
-//     this.classList.toggle('active');
-//     event.preventDefault();
-
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === 'block') {
-//       panel.style.display = 'none';
-//     } else {
-//       panel.style.display = 'block';
-//     }
-//   });
-// }
-
-// $(document).ready(function() {
-//   $('.js-accordion').click(function() {
-//     $('.ff-section__up-block').slideToggle('slow');
-//   });
-// });
-
-
-$('.js-more-info').click(function() {
-  $('.ff-section__sale-wrap').slideToggle('slow');
-});
+//accordion (ff-block)
 
 var accordionWrap = $('.js-accordion-wrap');
 
@@ -46,3 +21,29 @@ accordionWrap.each(function() {
   });
 });
 
+// accordion (faq-page)
+var submenu = $('.js-accord-hide-block').hide();
+
+//On Click
+$('.js-accord-btn').click(function(){
+    if( $(this).next().is(':hidden') ) { 
+        $('.js-accord-btn').removeClass('active').next().slideUp(); 
+        $(this).toggleClass('active').next().slideDown();
+
+    }
+    return false; 
+ $(function() {
+    $( '.js-accord-btn' ).click(function(){
+      collapsible: true; 
+    });
+});
+
+};
+
+
+
+//buton more-info (ff-page)
+
+$('.js-more-info').click(function() {
+  $('.ff-section__sale-wrap').slideToggle('slow');
+});

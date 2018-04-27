@@ -1,3 +1,147 @@
 .faq-esl
+	&__wrapper
+		position: relative
+	&__violet-ellipse-top
+		position: absolute
+		top: 38px
+		right: 10%
+		transform: translate(50%, 0)
+		z-index: -1
+		img
+			width: 195px
+			height: 193px
+	&__title
+		padding: 74px 0 44px
+		max-width: 735px
+		+sm
+			.title-lg
+				font-size: 48px
+	&__wrap
+		position: relative
+		color: $grey
+		font-family: $SFUIDisplay
+		padding-bottom: 118px
+	&__violet-ellipse-bottom
+		position: absolute
+		width: 258px
+		height: 342px
+		right: 0
+		top: 26px
+		transform: translate(50%, 0)
+		z-index: -1
+	&__title-bottom
+		max-width: 420px
+		padding: 110px 0 65px
+	&__form
+		padding-left: 126px
+		+sm
+			padding-left: 0
 	
-	
+.menu
+	&__block
+		display: flex
+		align-items: center
+		border-bottom: 1px solid $violet
+	&__item
+		padding: 19px 0 19px 6px
+		margin-right: 33px
+	&__link
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 18px
+		font-weight: 300
+		letter-spacing: 0.9px
+		text-decoration: none
+		&::before
+			transform: scale(0)
+		&.active
+			position: relative
+			color: $violet
+			&::before
+				position: absolute
+				top: 60%
+				left: 0
+				content: ''
+				width: 118%
+				height: 1px
+				margin-left: -6px
+				background-color: $violet
+				transform: scale(1)
+
+.accordion
+	&__block
+		display: flex
+		padding: 30px 0
+		border-bottom: 1px solid rgba(0,0,0, 0.05)
+	&__botton-block
+		margin-right: 28px
+	&__button
+		position: relative
+		margin: 0 0 auto 0
+		display: block
+		background: none
+		min-width: 99px
+		min-height: 99px
+		border-radius: 50%
+		border: 1px solid $violet
+		background-color: $violet
+		transition: background-color 0.3s, transform 0.3s
+		&::before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%	
+			width: 31px
+			height: 1px
+			background-color: $white
+			transform: translate(-50%, -50%)
+		&::after
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%	
+			width: 31px
+			height: 1px
+			background-color: $white
+			transform: translate(-50%, -50%) rotate(90deg)	
+		&:hover
+			background-color: $white
+			&::before,
+			&::after
+				background-color: $violet
+		&.is-active
+			&::after
+				transform: scale(0)
+	&__title
+		margin: 34px 0 34px
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+	&__hide-block
+		&.is-open
+			display: block		
+	&__line
+		display: block
+		width: 80px
+		height: 1px
+		background-color: $grey
+	&__text
+		padding: 27px 0
+		width: 744px
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 14px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.7px			
+
+.form
+	&__coment
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+					
