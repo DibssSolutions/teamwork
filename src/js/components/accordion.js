@@ -24,21 +24,7 @@ accordionWrap.each(function() {
 // accordion (faq-page)
 var submenu = $('.js-accord-hide-block').hide();
 
-//On Click
-$('.js-accord-btn').click(function(){
-    if( $(this).next().is(':hidden') ) { 
-        $('.js-accord-btn').removeClass('active').next().slideUp(); 
-        $(this).toggleClass('active').next().slideDown();
 
-    }
-    return false; 
- $(function() {
-    $( '.js-accord-btn' ).click(function(){
-      collapsible: true; 
-    });
-});
-
-};
 
 
 
