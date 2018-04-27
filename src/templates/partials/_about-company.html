@@ -23,10 +23,20 @@
 
   ]
 %}
-
 <!-- begin about-company -->
-<div class="about-company">
+ <div class="about-company">
 	<div class="about-company__in in">
+		<div class="about-company__bg">
+			<img src="img/about-bg1.svg" alt="">
+		</div>
+		<div class="about-company__page-title">
+			<h1 class="title-lg">ESL Global (English second language)</h1>
+		</div>
+		<div class="about-company__page-sub-title">
+			<h4 class="title-xs">
+				Помогаем всем желающим устроиться на работу в Китай учителем английского.
+			</h4>
+		</div>
 		<div class="about-company__row">
 			<div class="about-company__col">
 				<h2 class="title-md">
@@ -34,33 +44,33 @@
 				</h2>
 			</div>
 		</div>
-	</div>
-	<div class="about-company__wrap">
-		<div class="about-company__descr">
-			<p>
-				Мы были первыми в Украине, у кого получилось подойти к работе в Китае системно: отвечать за жилье и трудоустройство, брать на себя рутину с документами и поддерживать связь с клиентами 24/7.
-			</p>
-			<p>
-				С момента основания компании набили немало шишек: кому-то не открывали визу с первого раза, кого-то не брали на работу или процесс затягивался, жилье не всегда было уютным, а соседи — тихими. 
-			</p>
-		</div>
-		<div class="about-company__descr">
-			<p>
-				Зато сейчас нам не стыдно сказать, что ESL Global — единственная в Украине комплексная программа для учителей английского. Мы предусмотрели всё:
-			</p>
-		</div>
-		<div class="about-company__list list-about">
-			{% for item in list %}
-			<div class="list-about__item">
-				<div class="list-about__bg">{{item.bg}}</div>
-				<div class="list-about__icon">
-					<img src="{{item.icon}}" alt="img">
-				</div>
-				<div class="list-about__descr">
-					<p>{{item.descr}}</p>
-				</div>
+		<div class="about-company__wrap">
+			<div class="about-company__descr">
+				<p>
+					Мы были первыми в Украине, у кого получилось подойти к работе в Китае системно: отвечать за жилье и трудоустройство, брать на себя рутину с документами и поддерживать связь с клиентами 24/7.
+				</p>
+				<p>
+					С момента основания компании набили немало шишек: кому-то не открывали визу с первого раза, кого-то не брали на работу или процесс затягивался, жилье не всегда было уютным, а соседи — тихими. 
+				</p>
 			</div>
-			{% endfor %}
+			<div class="about-company__descr">
+				<p>
+					Зато сейчас нам не стыдно сказать, что ESL Global — единственная в Украине комплексная программа для учителей английского.<br> Мы предусмотрели всё:
+				</p>
+			</div>
+			<div class="about-company__list list-about">
+				{% for item in list %}
+				<div class="list-about__item">
+					<div class="list-about__bg">{{item.bg}}</div>
+					<div class="list-about__icon">
+						<img src="{{item.icon}}" alt="img">
+					</div>
+					<div class="list-about__descr">
+						<p>{{item.descr}}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>
