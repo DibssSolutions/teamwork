@@ -8,44 +8,12 @@
 	&__bg
 		margin-left: 88px
 		top: 0
+		height: 700px
+		overflow: hidden
 		+r(1279)
 			margin-left: 565px
 		img
-			width: 1327px 
-	// &__bg
-	// 	width: 408px
-	// 	position: absolute
-	// 	top: 87px
-	// 	top: 50%
-	// 	left: 50%
-	// 	transform: translate(-50%,-50%)
-	// 	margin-top: -99px
-	// 	margin-left: -21%
-	// 	img
-	// 		width: 100%
-	// 		display: block
-	// &__bg-cb
-	// 	width: 280px
-	// 	position: absolute
-	// 	transform: translate(-50%,-50%)
-	// 	top: 50%
-	// 	left: 50%
-	// 	margin-top: -404px
-	// 	margin-left: 41%
-	// 	img
-	// 		width: 100%
-	// 		display: block
-	// &__bg-cm
-	// 	width: 280px
-	// 	position: absolute
-	// 	transform: translate(-50%,-50%)
-	// 	top: 50%
-	// 	left: 50%
-	// 	margin-top: -100px
-	// 	margin-left: 41%
-	// 	img
-	// 		width: 100%
-	// 		display: block
+			width: 1327px
 .slider
 	position: relative
 	&__prev, &__next
@@ -63,6 +31,10 @@
 		background-size: 14px
 		top: 50%
 		cursor: pointer
+		border: 2px solid $yellow
+		transition: background-color 0.3s
+		&:hover
+			background-color: $white
 		+r(1279)
 			top: 41%
 	&__next
@@ -144,6 +116,11 @@
 	&__descr
 		margin-bottom: 87px
 		max-width: 405px
+		color: #373e41
+		font-weight: 300
+		line-height: 30px
+		/* Text style for "С, пасибо" */
+		letter-spacing: 0.7px
 		+r(1279)
 			max-width: 100%
 			margin-bottom: 60px
@@ -153,3 +130,8 @@
 	&__link
 		float: right
 		display: block
+	&__name
+		color: #373e41
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.7px

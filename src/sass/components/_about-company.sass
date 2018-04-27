@@ -1,0 +1,42 @@
+.about-company
+	&__row
+		+clr
+	&__col
+		width: 50%
+		float: right
+		margin-bottom: 75px
+	&__wrap
+		max-width: 750px
+		margin: 0 auto
+	&__descr
+		font-size: 18px
+		line-height: 30px
+		color: $grey
+		margin-bottom: 100px 
+		p:not(:last-child)
+			margin-bottom: 40px
+
+.list-about
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__item
+		max-width: 362px
+		position: relative
+		padding-bottom: 70px
+		margin-bottom: 50px
+	&__bg
+		position: absolute
+		font-size: 234px
+		font-weight: 400
+		color: $green
+		font-family: $Panton
+		font-weight: 900
+	&__icon
+		margin-bottom: 30px
+	&__descr
+		font-size: 18px
+		line-height: 30px
+		color: $grey
+		position: relative
+		z-index: 1

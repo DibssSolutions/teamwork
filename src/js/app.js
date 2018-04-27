@@ -3,6 +3,6 @@ import header from './components/header.js';
 import './components/valid-form.js';
 import './components/slider-client.js';
 import './components/video.js';
-svg4everybody();
+import './components/accordion.js';
 
 

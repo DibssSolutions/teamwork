@@ -9,10 +9,12 @@ body
 
 .title-lg
 	font-family: $Panton
+	color: $grey
 	font-size: 60px
 	line-height: 72px
 	letter-spacing: 0.25em
-	font-weight: 600 
+	font-weight: 600
+	letter-spacing: 1.5px
 	
 .title-md
 	font-family: $Panton
@@ -33,6 +35,7 @@ body
 	// line-height: 48px
 	// letter-spacing: 0.25em
 	font-weight: 600
+	color: $dark
 	+r(767)
 		font-size: 24px
 
@@ -40,7 +43,7 @@ body
 	font-family: $SFUIDisplay
 	font-size: 18px
 	line-height: 30px
-	letter-spacing: 0.05em
+	letter-spacing: 0.9px
 	font-weight: 200
 	color: $grey
 	+r(767)
@@ -123,7 +126,7 @@ body
 	letter-spacing: 1.1px
 	border: 1px solid $crimson
 	box-sizing: border-box
-	transition: color, background 1s
+	transition: color, background 0.3s
 	&_small
 		width: 194px
 	&:hover
@@ -139,13 +142,20 @@ body
 	text-decoration: none
 	max-width: 162px
 	position: relative
-	&:after
+	overflow: hidden
+	&:hover
+		&::after
+			transform: translateX(100%)
+	&::after
 		content: ''
 		position: absolute
 		top: 25px
 		width: 100%
 		height: 1px
 		background: $grey
+		right: 100% 
+		transition: transform 0.3s
+		// transform: translateX(-100px)
 	&__title
 		color: $grey
 		font-size: 10px

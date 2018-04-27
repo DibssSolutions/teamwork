@@ -1,11 +1,10 @@
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
     <style>
-        .st0{fill:none;stroke:#000;stroke-miterlimit:10}
+        .st0{opacity:.6;fill:#fff;stroke:#344c57;stroke-miterlimit:10}
     </style>
-    <path d="M37 36h-1v-5h-5v-1h6z"/>
     <path class="st0" d="M36.1 31c-3.5 5.1-9.4 8.5-16.1 8.5C9.2 39.5.5 30.8.5 20"/>
     <path class="st0" d="M3.6 9.4C7.1 4 13.1.5 20 .5 30.8.5 39.5 9.2 39.5 20"/>
-    <path class="st0" d="M31 30.5h5.5V36"/>
+    <path class="st0" d="M31.6 29.4h5.5v5.5"/>
     <path class="st0" d="M3.6 4.1v5.5h5.5"/>
     <path class="st0" d="M9.9 23.2l5.2 5.2 18.2-18.2"/>
 </svg>
