@@ -22,8 +22,24 @@ accordionWrap.each(function() {
 });
 
 // accordion (faq-page)
-var submenu = $('.js-accord-hide-block').hide();
+var accordionWrapper = $('.js-faq-esl-accord');
 
+accordionWrapper.each(function() {
+  var _this = $(this);
+  var accorTrig = _this.find('.js-accord-btn');
+  var accordions = _this.find('.js-accord');
+
+  accorTrig.on('click', function() {
+    var parent = $(this).parents('.js-accord');
+    var open = 'is-open';
+    if (!parent.hasClass(open)) {
+      accordions.removeClass(open);
+      parent.addClass(open);
+    } else {
+      parent.removeClass(open);
+    }   
+  });
+});
 
 
 

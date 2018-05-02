@@ -72,7 +72,7 @@
 	&__block
 		display: flex
 		padding: 30px 0
-		border-bottom: 1px solid rgba(0,0,0, 0.05)
+		border-bottom: 1px solidrgba(0,0,0, 0.05)
 	&__botton-block
 		margin-right: 28px
 	&__button
@@ -109,7 +109,7 @@
 			&::before,
 			&::after
 				background-color: $violet
-		&.is-active
+		.is-open.accordion__button &
 			&::after
 				transform: scale(0)
 	&__title
@@ -121,7 +121,8 @@
 		line-height: 30px
 		letter-spacing: 0.9px
 	&__hide-block
-		&.is-open
+		display: none
+		.is-open.accordion__block &
 			display: block		
 	&__line
 		display: block
