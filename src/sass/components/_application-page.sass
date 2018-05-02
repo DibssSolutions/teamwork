@@ -1,0 +1,134 @@
+.application-page
+	position: relative
+	&__top
+		margin-bottom: 187px 
+	&__page-title
+		margin-bottom: 54px
+		max-width: 354px
+		+r(767)
+			margin-bottom: 60px
+	&__bg_phone
+		max-width: 611px
+		position: absolute
+		right: -63px
+		top: -5px
+		+r(1280)
+			position: relative
+			right: 0
+			top: 0
+		img
+			max-width: 100%
+			display: block
+	&__page-sub-title
+		position: relative
+		padding-left: 132px
+		margin-bottom: 76px
+		max-width: 420px
+		+r(767)
+			padding-left: 0
+		&:before
+			position: absolute
+			content: ''
+			width: 100px
+			height: 1px
+			background: $grey  
+			left: 4px
+			top: 14px
+			opacity: 0.6
+			+r(767)
+				top: -23px
+	&__app
+		display: flex
+		+r(767)
+			display: block
+	&__icon
+		&:not(:last-child)
+			margin-right: 18px
+		+r(767)
+			margin-bottom: 30px 
+	&__bg
+		position: absolute
+		left: 50%
+		max-width: 1350px
+		width: 100%
+		margin-left: -2%
+		margin-top: -4px
+		transform: translateX(-50%)
+		img
+			max-width: 100%
+			display: block
+	&__wrap
+		max-width: 1180px
+		margin: 0 auto
+		padding: 0 20px 
+		+r(1023)
+			padding: 0 105px
+		+r(767)
+			padding: 0 15px  
+	&__content-title
+		margin: 0 auto
+		text-align: center 
+		max-width: 383px
+		margin-bottom: 46px
+	&__row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 300px
+		+r(1023)
+			flex-direction: column
+	&__col
+		width: 50%
+		position: relative
+		// width: 648px
+		// height: 595px
+		// &_img
+		// 	width: 611px
+		// 	padding-top: 60px
+		+r(1023)
+			// margin: 0 auto
+			width: 100%
+		&_info
+			max-width: 389px
+			// padding-top: 111px
+			+r(1023)
+				max-width: 100%
+				order: -1
+		// img
+		// 	width: 611px
+		// 	height: 361px
+		// 	position: relative
+	&__img
+		position: relative
+		max-width: 611px 
+		img
+			display: block
+			max-width: 100% 
+	&__bg-content
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		margin-left: -7%
+		max-width: 611px
+		width: 100%
+		+r(1280)
+			margin-left: 0
+		img
+			max-width: 100%
+			display: block
+	&__item-title
+		margin-bottom: 49px
+	&__line
+		width: 80px
+		height: 1px
+		background-color: #344c57 
+		margin-bottom: 47px
+	&__descr
+		p
+			color: #344c57
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+			letter-spacing: 0.9px

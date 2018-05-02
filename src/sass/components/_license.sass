@@ -1,24 +1,50 @@
 .license
 	padding-bottom: 657px
+	+r(1023)
+		padding-bottom: 0
 	&__bg
 		position: absolute
 		left: 50%
 		transform: translateX(-50%)
-		top: 611px
+		top: 623px
 		left: 1050px 
 	&__title
 		max-width: 372px
+		+r(1023)
+			max-width: 100%
+			margin-bottom: 70px
+		+r(767)
+			margin-bottom: 50px
 	&__img
 		position: absolute
 		right: 20px
-		top: 0
+		top: 14px
+		+r(1023)
+			position: relative
+			display: flex
+			flex-direction: column
+			align-items: center
+			right: 0
+			margin-bottom: 83px
+			top: 0
+		+r(767)
+			margin-bottom: 50px
 	&__sub-img
 		position: absolute
-		left: 20px
-		top: 386px
-
+		left: 24px
+		top: 400px
+		+r(1023)
+			position: relative
+			left: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			top: 0
 .img-license
 	&__img
-		margin-bottom: 49px
+		margin-bottom: 37px
+		img
+			max-width: 100%
+			display: block 
 	&__title
 		text-align: center

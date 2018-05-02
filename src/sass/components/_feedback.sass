@@ -2,9 +2,16 @@
 	padding: 226px 0 206px 
 	position: relative
 	+r(1279)
-		padding-bottom: 92px 
-	+r(767)
-		display: none 
+		padding: 0 0 92px 0
+	&_pad
+		padding: 138px 0 146px
+		+r(1279)
+			padding: 138px 0 146px
+		+r(767)
+			padding: 123px 0 0 0
+	&_hide
+		+r(767)
+			display: none 
 	&__bg
 		margin-left: 88px
 		top: 0
@@ -15,8 +22,8 @@
 		img
 			width: 1327px
 	&__bag
-		top: 50px
-		left: 362px
+		top: 55px
+		left: 117px
 		
 .slider
 	position: relative
@@ -66,6 +73,8 @@
 		+r(1279)
 			left: 0
 			text-align: left
+		+r(767)
+			bottom: 65px
 		&  .slick-active .slider__item
 			background: $crimson 
 		li
@@ -100,7 +109,10 @@
 			width: 155px
 			height: 155px
 			margin-left: 0
-			margin-right: 23px 
+			margin-right: 23px
+		+r(767)
+			width: 80px
+			height: 80px
 		img
 			width: 100%
 			display: block
@@ -128,12 +140,16 @@
 		+r(1279)
 			max-width: 100%
 			margin-bottom: 60px
+		+r(767)
+			margin-bottom: 106px
 		p
 			line-height: 30px
 			letter-spacing: 0.7px 
 	&__link
 		float: right
 		display: block
+		+r(767)
+			float: none
 	&__name
 		color: #373e41
 		font-weight: 300
