@@ -137,16 +137,27 @@ title: faq-esl page
 					<span class="form__coment">
 						Напишите его и мы ответим вам в ближайшее время
 					</span>
-					<div class="form__field">
-						<label class="form__focus"><input type="text" class="input js-name">Имя</label>
-						<span class="form__error">Error!</span>
-					</div>
-					<div class="form__field">
-						<label class="form__focus"><input type="text" name="phone" class="input js-phone">Телефон</label>
-						<span class="form__error">Error!</span>
-					</div>
-					<div class="form__field">
-						<label class="form__focus"><input type="text" name="phone" class="input js-phone">Здесь напишите свой вопрос</label>
+					<div class="form__box">
+						<div class="form__field form__field_mode">
+							<input id="form" type="text" name="name" class="input form__input_mode  js-name">
+							<label class="form__focus" for="form">
+								Имя
+							</label>
+							<span class="form__error">Error!</span>
+						</div>
+						<div class="form__field form__field_mode">
+							<input id="form" type="text" name="phone" class="input form__input_mode js-phone">
+							<label class="form__focus" for="form">
+								Телефон
+							</label>
+							<span class="form__error">Error!</span>
+						</div>
+					</div>	
+					<div class="form__field form__field_width">
+						<input id="form" type="text" name="quastion" class="input form__input_mode js-quastion">
+						<label class="form__focus" for="form">
+							Здесь напишите свой вопрос
+						</label>
 						<span class="form__error">Error!</span>
 					</div>
 					<div class="form__submit">

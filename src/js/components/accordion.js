@@ -28,15 +28,21 @@ accordionWrapper.each(function() {
   var _this = $(this);
   var accorTrig = _this.find('.js-accord-btn');
   var accordions = _this.find('.js-accord');
-
+  var allContentBlocks = _this.find('.accordion__hide-block');
+ 
   accorTrig.on('click', function() {
     var parent = $(this).parents('.js-accord');
     var open = 'is-open';
+    var contentBlock = parent.find('.accordion__hide-block');
     if (!parent.hasClass(open)) {
       accordions.removeClass(open);
+      allContentBlocks.slideUp(500);
       parent.addClass(open);
+      contentBlock.slideDown(500);
     } else {
       parent.removeClass(open);
+      contentBlock.slideUp(500);
+
     }   
   });
 });
