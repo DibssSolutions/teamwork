@@ -9,3 +9,7 @@ PageList:
   ready: 50 
 - file: application-page.html
   ready: 50 
+- file: contacts.html
+  ready: 90  
+- file: reviews.html
+  ready: 50

@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index page</title>
+    <title>contacts page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -13,7 +13,7 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <div class="header">
+      <div class="header header_red">
         <div class="header-mobile">
           <div class="header-mobile__wrapper">
             <div class="header-mobile__logo"> <a href="#" class="logo">
@@ -39,7 +39,7 @@
 					<img src="img/icon_menu_close.svg">
 				</button> </div> <span class="header-mobile__menu-text let-spac">+86 18500709387 (пекин)</span>
             <ul class="header-mobile__length js-lang lang media767">
-              <li class="lang__item"> <a href="#" class="lang__text js-lang-text">RU</a> </li>
+              <li class="lang__item"> <a href="#" class="lang__text js-lang-text lang__text_green">RU</a> </li>
               <li class="lang__item is-active"> <a href="#" class="lang__text js-lang-text">EN</a> </li>
             </ul>
           </div>
@@ -107,6 +107,72 @@
             <li class="lang__item"> <a href="#" class="lang__text js-lang-text">RU</a> </li>
             <li class="lang__item is-active"> <a href="#" class="lang__text js-lang-text">EN</a> </li>
           </ul>
+        </div>
+      </div>
+      <div class="contacts__wrapper">
+        <div class="contacts__red-ellipse-top"> <img src="img/ellipse-red-top.svg" alt="ellipse"> </div>
+        <div class="contacts__red-ellipse-bottom"> <img src="img/ellipse-red-bottom.svg" alt="ellipse"> </div>
+        <div class="contacts__inner inner">
+          <div class="contacts__container">
+            <div class="contacts__block">
+              <h2 class="title-md"> Ждем вас в гости </h2> <span class="contacts__block-line"></span>
+              <div class="contacts__block-position">
+                <div class="contacts__text margin-right"> <span class="contacts__text-strong">
+							Киев
+						</span> <span class="contacts__text-margin">
+							ул. Евгения Коновальца 31, Офис 108
+						</span> <a href="" class="contacts__link-phone">
+							+38 (044) 233 27 66
+						</a> <a href="" class="contacts__link-phone">
+							+38 (044) 233 27 66
+						</a> </div>
+                <div class="contacts__text"> <span class="contacts__text-strong">
+							Пекин
+						</span> <span>
+							Chaoyang dist. Shuangjing,
+						</span> <span class="contacts__text-margin">
+							Dongbai jie 10, 5/S307
+						</span> <a href="" class="contacts__link-phone">
+							+86 18500709387
+						</a> </div>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <h2 class="contacts__title title-md"> Режим работы </h2> <span class="contacts__block-line"></span>
+              <div class="contacts__text"> <span class="contacts__text-strong">
+						Пн-пт:
+						<span class="contacts__text-normal">
+							10:00 - 18:00
+						</span> </span> <span class="contacts__text-strong">
+						Сб-вс: 
+						<span class="contacts__text-normal">
+							выходной
+						</span> </span> <span class="contacts__text-strong">
+						Обед: 
+						<span class="contacts__text-normal">
+							13:00 -14:00
+						</span> </span>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <h2 class="contacts__title title-md"> Доп. контакты </h2> <span class="contacts__block-line"></span>
+              <div class="contacts__text"> <span class="contacts__text-strong">
+						E-mail:
+						<br>
+						<span  class="contacts__text-normal contacts__text-normal_margin">
+							info@eslglobal-edu.com
+						</span> </span> <span class="contacts__text-strong">
+						Skype:
+						<br>
+						<span  class="contacts__text-normal">
+							eslglobal-edu
+						</span> </span>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <div id="map" class="contacts__map"></div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- begin footer -->
@@ -251,6 +317,241 @@
         </div>
       </div>
       <!-- end footer -->
+      <script>
+        function initMap()
+        {
+          // Create a map object and specify the DOM element for display.
+          var map = new google.maps.Map(document.getElementById('map'),
+          {
+            center:
+            {
+              lat: 39.9041999,
+              lng: 116.4073963
+            },
+            zoom: 10,
+            styles: [
+            {
+              "featureType": "water",
+              "elementType": "labels.text.fill",
+              "stylers": [
+              {
+                "color": "#ffffff"
+              }]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "transit",
+              "stylers": [
+              {
+                "color": "#808080"
+              },
+              {
+                "visibility": "off"
+              }]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry.stroke",
+              "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#2e5b72"
+              },
+              {
+                "weight": 0.1
+              }]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              },
+              {
+                "weight": 0.1
+              }]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#2e5b72"
+              },
+              {
+                "weight": 0.1
+              }]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "geometry.stroke",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              },
+              {
+                "weight": 0.2
+              }]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "geometry",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              },
+              {
+                "weight": 0.1
+              }]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "landscape",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#efefef"
+              }]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.fill",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "labels.text.fill",
+              "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.icon",
+              "stylers": [
+              {
+                "visibility": "on"
+              }]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels",
+              "stylers": [
+              {
+                "visibility": "on"
+              }]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [
+              {
+                "visibility": "on"
+              },
+              {
+                "color": "#505050"
+              }]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "geometry.stroke",
+              "stylers": [
+              {
+                "color": "#2e5b72"
+              }]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.icon",
+              "stylers": [
+              {
+                "visibility": "on"
+              }]
+            },
+            {},
+            {
+              "featureType": "poi",
+              "elementType": "geometry.fill",
+              "stylers": [
+              {
+                "color": "#dadada"
+              }]
+            }]
+          });
+          addMarker(
+          {
+            lat: 39.9041999,
+            lng: 116.4073963
+          })
+
+          function addMarker(coordinates)
+          {
+            var marker = new google.maps.Marker(
+            {
+              position: coordinates,
+              map: map,
+              icon:
+              {
+                url: 'img/map-icon@2x.png',
+                scaledSize: new google.maps.Size(32, 40),
+              },
+            });
+          }
+        }
+
+      </script>
+      <!-- BEGIN scripts -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFO57vNli4qHYiwTDyJsyoFGQcEnCnog&callback=initMap" async defer></script>
+      <!-- END scripts -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

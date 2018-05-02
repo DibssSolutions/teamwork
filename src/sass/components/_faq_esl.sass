@@ -1,3 +1,188 @@
 .faq-esl
+	&__wrapper
+		position: relative
+	&__violet-ellipse-top
+		position: absolute
+		top: 38px
+		right: 10%
+		transform: translate(50%, 0)
+		z-index: -1
+		img
+			width: 195px
+			height: 193px
+	&__title
+		padding: 74px 0 44px
+		max-width: 735px
+		+sm
+			.title-lg
+				font-size: 48px
+	&__wrap
+		position: relative
+		color: $grey
+		font-family: $SFUIDisplay
+		padding-bottom: 118px
+	&__violet-ellipse-bottom
+		position: absolute
+		width: 258px
+		height: 342px
+		right: 0
+		top: 26px
+		transform: translate(50%, 0)
+		z-index: -1
+	&__title-bottom
+		max-width: 420px
+		padding: 110px 0 65px
+	&__form
+		padding: 0 126px
+		+sm
+			padding: 0
 	
-	
+.menu
+	&__block
+		display: flex
+		align-items: center
+		border-bottom: 1px solid $violet
+	&__item
+		padding: 19px 0 19px 6px
+		margin-right: 33px
+		+sm
+			margin-right: 20px
+	&__link
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 18px
+		font-weight: 300
+		letter-spacing: 0.9px
+		text-decoration: none
+		&::before
+			transform: scale(0)
+		&.active
+			position: relative
+			color: $violet
+			&::before
+				position: absolute
+				top: 60%
+				left: 0
+				content: ''
+				width: 118%
+				height: 1px
+				margin-left: -6px
+				background-color: $violet
+				transform: scale(1)
+
+.accordion
+	+gpu
+	&__block
+		display: flex
+		padding: 30px 0
+		border-bottom: 1px solidrgba(0,0,0, 0.05)
+	&__botton-block
+		margin-right: 28px
+	&__button
+		position: relative
+		margin: 0 0 auto 0
+		display: block
+		background: none
+		min-width: 99px
+		min-height: 99px
+		border-radius: 50%
+		border: 1px solid $violet
+		background-color: $violet
+		transition: background-color 0.3s, transform 0.3s
+		.is-open.accordion__block &
+			background-color: #fff		
+		&::before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%	
+			width: 30px
+			height: 1px
+			background-color: $white
+			margin: -1px 0 0 -15px
+			.is-open.accordion__block &
+				background-color: $violet
+		&::after
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%	
+			width: 1px
+			height: 30px
+			background-color: $white
+			margin: -15px 0 0 -1px
+			transform: scaleY(1)
+			transition: transform .3s
+			.is-open.accordion__block &
+				transform: scaleY(0)
+		&:hover
+			background-color: $white
+			&::before,
+			&::after
+				background-color: $violet
+		+sm
+			min-width: 60px
+			min-height: 60px		
+	&__title
+		margin: 34px 0 34px
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+		+sm
+			margin: 16px 0
+	&__hide-block
+		display: none
+		.is-open.accordion__block &
+			// display: block		
+	&__line
+		display: block
+		width: 80px
+		height: 1px
+		background-color: $grey
+	&__text
+		padding: 27px 0
+		max-width: 744px
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 14px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.7px			
+
+.form
+	&__coment
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		letter-spacing: 0.9px
+	&__box
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 40px
+		+sm
+			flex-direction: column
+	&__field_mode
+		width: 49%
+		+sm
+			width: 100%
+		.form__input_mode
+			width: 100%
+			+xs
+				width: 100%
+	&__field_mode:first-child
+		padding-right: 20px
+		+sm
+			padding: 0	
+	&__field_width		
+		width: 100%
+		.form__input_mode
+			width: 100%
+	&__submit
+		+sm
+			display: flex
+			align-items: center
+			justify-content: center			

@@ -1,0 +1,96 @@
+.contacts
+	&__inner
+		+md
+			max-width: 540px
+			margin: 0 auto
+		+sm
+			padding: 0 135px
+		+xs
+			padding: 0 15px		
+	&__wrapper
+		padding-top: 77px
+		position: relative
+	&__red-ellipse-top
+		position: absolute
+		width: 197px
+		height: 208px
+		top: 38px
+		right: 10%
+		transform: translate(50%, 0)
+		z-index: -1
+		img
+			width: 100%
+	&__red-ellipse-bottom
+		position: absolute
+		width: 250px
+		height: 288px
+		bottom: 73px
+		left: 7%
+		transform: translate(-50%, 0)
+		z-index: -1
+		img
+			width: 100%
+	&__container
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		color: $grey
+		font-family: $SFUIDisplay
+		font-size: 18px
+		font-weight: 300
+		line-height: 30px
+		+sm
+			flex-direction: column
+	&__block
+		margin-bottom: 100px
+		+sm
+			margin-bottom: 50px
+	&__title
+		width: 210px
+	&__block-line
+		display: block
+		margin: 40px 0
+		width: 80px
+		height: 1px
+		background-color: $grey
+	&__block-position
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		+sm
+			flex-direction: column
+	&__text
+		display: flex
+		flex-direction: column
+		max-width: 239px
+		margin-bottom: 30px
+		&.margin-right
+			margin-right: 90px
+		+md
+			width: 200px
+	&__link-phone
+		text-decoration: none
+		color: $grey		
+	&__text-strong
+		font-weight: 700
+		letter-spacing: 0.9px
+	&__text-normal
+		font-weight: 300
+	&__text-margin
+		margin-bottom: 35px
+	&__text-normal_margin
+		display: block
+		margin-bottom: 35px
+	&__map
+		width: 640px
+		height: 640px
+		border-radius: 50%
+		margin-bottom: 121px
+		+md
+			margin: 0 auto
+			width: 540px
+			height: 540px
+		+sm
+			width: 290px
+			height: 290px	
