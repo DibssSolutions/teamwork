@@ -1,0 +1,15 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+
+
+{% block content %}
+
+{{ header.block() }}
+{% include "partials/_application-page.html" %}
+
+{% include "partials/_footer.html" %}
+
+{% endblock %}

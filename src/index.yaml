@@ -6,7 +6,9 @@ PageList:
 - file: about.html
   ready: 50
 - file: faq_esl.html
-  ready: 90
+  ready: 50 
+- file: application-page.html
+  ready: 50 
 - file: contacts.html
   ready: 90  
 - file: reviews.html

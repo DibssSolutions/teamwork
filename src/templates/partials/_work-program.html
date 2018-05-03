@@ -21,7 +21,7 @@ list = [
 		number: '3'
 	},
 	{
-		img: 'img/base7.svg',
+		img: 'img/base6.svg',
 		title: 'Летите в Пекин',
 		descr: 'В аэропорту вас встретит сотрудник ESL Global и отвезёт в уже забронированный хостел на новенькой Tesla.',
 		number: '4'
@@ -43,10 +43,12 @@ list = [
 		title: 'Переезжаете в новый дом',
 		descr: 'Мы принимаем оплату в два платежа. Первый платеж (700 $) вносите, когда мы примем документы. Второй — по прилёту в Китай.',
 		number: '7'
+		
 	},
 	{
 		img: 'img/base7.svg',
 		title: 'Поздравляем! Теперь вы живете в Китае, занимаетесь любимым делом и зарабатываете на этом.',
+		icon: true,
 		number: '8'
 	}
 ]
@@ -107,7 +109,7 @@ list2 = [
 					{% for item in list %}
 					<div class="list-work__item {% if item.itemmt %}list-work__item_mt{% endif %}">
 						<div class="list-work__bg">
-							<div class="list-work__icon">
+							<div class="list-work__icon {% if item.icon %}list-work__icon_af{% endif %}">
 								<img src="{{item.img}}" alt="img">
 							</div>				
 							<span class="list-work__number">{{item.number}}</span>

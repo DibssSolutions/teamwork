@@ -9,12 +9,16 @@
 		top: 58px   
 	&__page-title
 		margin-bottom: 49px
+		+r(767)
+			margin-bottom: 60px
 	&__page-sub-title
 		position: relative
 		padding-left: 132px
 		margin-bottom: 138px
 		max-width: 650px
-		&:after
+		+r(767)
+			padding-left: 0
+		&:before
 			position: absolute
 			content: ''
 			width: 100px
@@ -23,12 +27,17 @@
 			left: 4px
 			top: 14px
 			opacity: 0.6
+			+r(767)
+				top: -23px
 	&__row
 		+clr
 		margin-bottom: 56px
 	&__col
 		width: 50%
 		float: right
+		+r(767)
+			width: 100%
+			float: none
 	&__wrap
 		max-width: 744px
 		margin: 0 auto
@@ -36,10 +45,12 @@
 		font-size: 18px
 		line-height: 30px
 		color: $grey
-		margin-bottom: 100px
+		margin-bottom: 85px
 		position: relative
 		z-index: 1
 		letter-spacing: 0.9px
+		+r(767)
+			margin-bottom: 35px
 		p:not(:last-child)
 			margin-bottom: 30px
 
@@ -47,11 +58,16 @@
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	margin: 0 -15px 
 	&__item
-		max-width: 336px
+		// max-width: 336px
+		width: 50%
 		position: relative
 		padding-bottom: 70px
-		margin-bottom: 50px
+		margin-bottom: 122px
+		padding: 0 15px 
+		+r(767)
+			width: 100%
 	&__bg
 		position: absolute
 		font-size: 234px
@@ -61,11 +77,16 @@
 		color: $green
 		font-family: $Panton
 		font-weight: 900
+		+r(767)
+			font-size: 130px
+			line-height: 95px
 	&__icon
-		margin-bottom: 30px
+		margin-bottom: 16px
 	&__descr
 		font-size: 18px
 		line-height: 30px
 		color: $grey
 		position: relative
 		z-index: 1
+		+r(767)
+			font-size: 14px
